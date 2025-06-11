@@ -1,0 +1,96 @@
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @font-face {
+            font-family: 'HansonBold';
+            src: url('Hanson-Bold.otf') format('opentype');
+        }
+
+        body {
+            background-color: rgb(70, 68, 68);
+            font-family: 'HansonBold', sans-serif;
+        }
+        .header-container{
+            /* background-color: red; */
+            margin: 20px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .navbar {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            padding: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .logo img{
+            height: 50px;
+        }
+        .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-links > li{
+            position: relative;
+        }
+        .nav-links a{
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+            /* margin: 20px; */
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .nav-links a:hover{
+            text-decoration: underline;
+        }
+        .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #222;
+    min-width: 150px;
+    display: none;
+    list-style: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding: 0; /* remove default spacing */
+}
+
+.dropdown-menu li a {
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-family: Arial, sans-serif;
+    width: 100%;       
+    box-sizing: border-box; 
+}
+
+.dropdown-menu li a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+        .icon-list{
+            display:flex;
+            gap: 1rem;
+            list-style: none;
+            align-items: center;
+        }
+        .main-container{
+            color: white;
+        }

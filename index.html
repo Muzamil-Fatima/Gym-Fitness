@@ -5,102 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        @font-face {
-            font-family: 'HansonBold';
-            src: url('Hanson-Bold.otf') format('opentype');
-        }
+        /*----------------------------------- section  2  -----------------------  */
 
-        body {
-            background-color: black;
-            font-family: 'HansonBold', sans-serif;
-        }
-        .header-container{
-            /* background-color: red; */
-            margin: 20px;
-            margin-right: 50px;
-            margin-left: 50px;
-        }
-        .navbar {
-            justify-content: space-between;
-            display: flex;
-            align-items: center;
-            height: 60px;
-            padding: 0 1rem;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        .logo img{
-            height: 50px;
-        }
-        .nav-links{
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        .nav-links > li{
+        .section-2 {
             position: relative;
+            height: 120px;
+            background-color: #3c3a3a;
+            overflow: hidden;
         }
-        .nav-links a{
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            display: block;
-            /* margin: 20px; */
-            box-sizing: border-box;
-            width: 100%;
-        }
-        .nav-links a:hover{
-            text-decoration: underline;
-        }
-        .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #222;
-    min-width: 150px;
-    display: none;
-    list-style: none;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    padding: 0; /* remove default spacing */
-}
 
-.dropdown-menu li a {
-    padding: 0.5rem 1rem;
-    color: white;
-    text-decoration: none;
-    display: block;
-    font-family: Arial, sans-serif;
-    width: 100%;       
-    box-sizing: border-box; 
-}
-
-.dropdown-menu li a:hover {
-    background-color: #555;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-        .icon-list{
-            display:flex;
-            gap: 1rem;
-            list-style: none;
+        /* Common ribbon base */
+        .ribbon {
+            position: absolute;
+            left: -50px;
+            width: 110%;
+            height: 40px;
+            overflow: hidden;
+            display: flex;
             align-items: center;
+            z-index: 1;
         }
-        
 
+        .ribbon.white {
+            top: 20px;
+            background-color: white;
+            transform: rotate(-2deg);
+            z-index: 2;
+            color: black;
+        }
+
+        .ribbon.dark {
+            top: 50px;
+            background-color: #2c2f3b;
+            transform: rotate(2deg);
+            color: white;
+        }
+
+        /* Scrolling text wrapper */
+        .ribbon span {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%;
+            animation: scroll-left 15s linear infinite;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Keyframes for scroll animation */
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+
+
+
+        /*----------------------------------- section  2  -----------------------  */
+        /*----------------------------------- section  3  -----------------------  */
+        /*----------------------------------- section  4  -----------------------  */
+        /*----------------------------------- section  5  -----------------------  */
+        /*----------------------------------- section  6  -----------------------  */
     </style>
 </head>
 
@@ -124,26 +95,57 @@
             </div>
             <div class="icons">
                 <ul class="icon-list">
-                    <li><svg fill="white" width="40px" height="40px" viewBox="0 0 24 24" id="cart" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color"><path id="secondary-upstroke" d="M11,20.5h.1m5.9,0h.1" style="fill: none; stroke: rgb(44, 169, 188); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="primary" d="M3,3H5.14a1,1,0,0,1,1,.85L6.62,7,8,16l11-1,2-8H6.62" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg></li>
-                    <li><svg width="32px" height="32px" fill="white" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>communication / 8 - communication, account, profile, person, user icon</title><g id="Free-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(-1265.000000, -82.000000)" id="Group" stroke="white" stroke-width="2"><g transform="translate(1263.000000, 80.000000)" id="Shape"><path d="M12,13 C9.23857625,13 7,10.7614237 7,8 C7,5.23857625 9.23857625,3 12,3 C14.7614237,3 17,5.23857625 17,8 C17,10.7614237 14.7614237,13 12,13 Z M12,16 C17.1428571,16 20.1428571,17.6666667 21,21 L3,21 C3.85714286,17.6666667 6.85714286,16 12,16 Z"></path></g></g></g></svg></li>
+                    <li><svg fill="white" width="40px" height="40px" viewBox="0 0 24 24" id="cart"
+                            data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+                            <path id="secondary-upstroke" d="M11,20.5h.1m5.9,0h.1"
+                                style="fill: none; stroke: rgb(44, 169, 188); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                            </path>
+                            <path id="primary" d="M3,3H5.14a1,1,0,0,1,1,.85L6.62,7,8,16l11-1,2-8H6.62"
+                                style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                            </path>
+                        </svg></li>
+                    <li><svg width="32px" height="32px" fill="white" viewBox="0 0 22 22" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>communication / 8 - communication, account, profile, person, user icon</title>
+                            <g id="Free-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <g transform="translate(-1265.000000, -82.000000)" id="Group" stroke="white"
+                                    stroke-width="2">
+                                    <g transform="translate(1263.000000, 80.000000)" id="Shape">
+                                        <path
+                                            d="M12,13 C9.23857625,13 7,10.7614237 7,8 C7,5.23857625 9.23857625,3 12,3 C14.7614237,3 17,5.23857625 17,8 C17,10.7614237 14.7614237,13 12,13 Z M12,16 C17.1428571,16 20.1428571,17.6666667 21,21 L3,21 C3.85714286,17.6666667 6.85714286,16 12,16 Z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg></li>
                 </ul>
             </div>
         </nav>
     </header>
     <hr>
-
-
-    <main>
+    <main class="main-container">
         <div class="section-1">
             <h1>UNLEASH YOUR INNER STRENGTH 💪</h1>
-            <img src="women.png" alt="Women imge">
+            <a href="#"><img src="women.png" alt="Women imge"></a>
+
         </div>
-        <div class="section-2"></div>
-        <div class="section-3"></div>
+        <div class="section-2">
+            <div class="ribbon white">
+                <span>DEDICATION • CONSISTENCY • TRAINING • DEDICATION • CONSISTENCY • TRAINING • </span>
+            </div>
+            <div class="ribbon dark">
+                <span>DEDICATION • CONSISTENCY • TRAINING • DEDICATION • CONSISTENCY • TRAINING • </span>
+            </div>
+        </div>
+
+        <div class="section-3"><img src="mealplan.svg" alt=""></div>
+        <hr>
         <div class="section-4"></div>
+        <hr>
         <div class="section-5"></div>
+        <hr>
         <div class="section-6"></div>
-        <div class="section-7"></div>
     </main>
     <footer></footer>
 </body>
