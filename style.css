@@ -7,7 +7,11 @@
             font-family: 'HansonBold';
             src: url('Hanson-Bold.otf') format('opentype');
         }
-
+        span{
+            color: rgb(241, 92, 54) ;
+        }
+    /*----------------------------------- section  2  -----------------------  */
+     
         body {
             background-color: rgb(70, 68, 68);
             font-family: 'HansonBold', sans-serif;
