@@ -1,100 +1,125 @@
-   * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        @font-face {
-            font-family: 'HansonBold';
-            src: url('Hanson-Bold.otf') format('opentype');
-        }
-        span{
-            color: rgb(241, 92, 54) ;
-        }
-    /*----------------------------------- section  2  -----------------------  */
-     
-        body {
-            background-color: rgb(70, 68, 68);
-            font-family: 'HansonBold', sans-serif;
-        }
-        .header-container{
-            /* background-color: red; */
-            margin: 20px;
-            margin-right: 50px;
-            margin-left: 50px;
-        }
-        .navbar {
-            justify-content: space-between;
-            display: flex;
-            align-items: center;
-            height: 60px;
-            padding: 0 1rem;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        .logo img{
-            height: 50px;
-        }
-        .nav-links{
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        .nav-links > li{
-            position: relative;
-        }
-        .nav-links a{
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            display: block;
-            /* margin: 20px; */
-            box-sizing: border-box;
-            width: 100%;
-        }
-        .nav-links a:hover{
-            text-decoration: underline;
-        }
-        .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #222;
-    min-width: 150px;
-    display: none;
-    list-style: none;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    padding: 0; /* remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "HansonBold";
+  src: url("Hanson-Bold.otf") format("opentype");
+}
+/* span {
+  color: rgb(241, 92, 54);
+} */
+/*----------------------------------- Header  -----------------------  */
+
+body {
+  background-color: rgb(70, 68, 68);
+  font-family: "HansonBold", sans-serif;
+  width: 96vw;
+  justify-content: center;
+  margin: auto;
+}
+.header-container {
+  /* background-color: red; */
+  margin: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.navbar {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 1rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.logo img {
+  height: 50px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.nav-links > li {
+  position: relative;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  /* margin: 20px; */
+  box-sizing: border-box;
+  width: 100%;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #222;
+  min-width: 150px;
+  display: none;
+  list-style: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  padding: 0; /* remove default spacing */
 }
 
 .dropdown-menu li a {
-    padding: 0.5rem 1rem;
-    color: white;
-    text-decoration: none;
-    display: block;
-    font-family: Arial, sans-serif;
-    width: 100%;       
-    box-sizing: border-box; 
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .dropdown-menu li a:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
-        .icon-list{
-            display:flex;
-            gap: 1rem;
-            list-style: none;
-            align-items: center;
-        }
-        .main-container{
-            color: white;
-        }
+.icon-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+.main-container {
+  color: white;
+}
+/* ------------------------------------  Main ------------------------------------------  */
+
+/*----------------------------------- section  1  -----------------------  */
+.section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 40px 5px 25px;
+}
+
+.text-box h1 {
+  font-size: 90px;
+  margin-left: 40px;
+}
+
+.text-box h1 span {
+  display: block;
+}
+
+.img-left {
+  height: 543px;
+}
