@@ -77,11 +77,6 @@
         }
 
 
-        /*----------------------------------- section  4  -----------------------  */
-        .section-4 {
-            background-color: #ff5a3c;
-            color: white;
-        }
 
         /*----------------------------------- section  5 -----------------------  */
         .circle-bg {
@@ -120,7 +115,7 @@
             display: flex;
         }
 
-        .col-1 {}
+        /* .col-1 {}
 
         .social-icon {
             text-decoration: none;
@@ -138,11 +133,11 @@
 
         .col-5 {
             display: flex;
-            /* justify-content: space-between; */
+            justify-content: space-between;
             align-content: space-between;
 
 
-        }
+        } */
         /*----------------------------------- section  3  -----------------------  */
         .section-3 {
             display: flex;
@@ -150,44 +145,180 @@
             color: white;
             justify-content: space-around;
             width: 80vw;
+            margin: 40px auto;
         }
+
         .circle-wrapper {
             position: relative;
             display: inline-block;
         }
+
         .profile-img {
             position: relative;
             z-index: 1;
-            /* in front */
             display: block;
             height: 635px;
             width: 524.02px;
         }
-        .btn {
-            height: 50px;
-            width: 299px;
-        }
+
         .sub-section {
             float: left;
             border: 2px solid red;
-            width: 40%;
+            width: 42%;
         }
+
         .goal {
             font-family: "HansonBold", sans-serif;
             font-weight: 700;
             font-size: 51.12px;
-            text-align: justify;
             margin-top: 20px;
         }
-        .para-goal{
+
+        .para-goal {
             font-family: "Poppins", sans-serif;
             font-size: 20.45px;
             color: rgb(114, 110, 110);
             font-weight: 400;
+            line-height: 1.5;
         }
-        .top-subtract{
+
+        .top-subtract {
             float: right;
+            margin-bottom: 3px;
         }
+
+        .icon-container {
+            display: flex;
+            font-family: 'Poppins', sans-serif;
+            gap: 5px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .image-stack {
+            position: relative;
+        }
+
+        .tick {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            margin: auto auto 30px auto;
+
+        }
+
+        .circle {
+            width: 40px;
+            height: 40px;
+        }
+
+        .bottom-subtract {
+            /* float: bottom; */
+        }
+
+        .btn-book {
+            border-radius: 50px;
+            color: white;
+            background: transparent;
+            height: 50px;
+            width: 299px;
+            border: 2px solid white;
+            position: absolute;
+            margin: 20px;
+        }
+
+        .sub-para {}
+
+        /*----------------------------------- section  4  -----------------------  */
+        .section-4 {
+            background-color: #ff5a3c;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            height: 571px;
+            font-family: 'Poppins', sans-serif;
+            padding: 25px;
+            box-sizing: border-box;
+            border-radius: 25px;
+        }
+
+        .dot-border {
+            border: 2px dashed black;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 20px 20px;
+            border-radius: 25px;
+        }
+
+        .img-cretificate {
+            float: right;
+            /* border: 2px solid red; */
+            height: 370px;
+            /* position: relative; */
+            right: 69px;
+        }
+
+        .sub-section4 {
+            width: 32%;
+            /* border: 2px solid red; */
+            /* margin: 20px; */
+            /* justify-content: center; */
+            line-height: 1.5;
+        }
+
+        .bold {
+            font-weight: 700;
+            font-size: 43px;
+            font-family: "HansonBold", sans-serif;
+        }
+
+
+        .para-fit {
+            font-size: 20px;
+            /* margin-bottom: 5px; */
+        }
+
+        .icon-container {
+            /* margin: 25px; */
+            display: flex;
+            /* position: relative; */
+        }
+.tick{
+    position: relative;
+    left: auto;
+}
+
+        /* #toggleBtn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: transparent;
+            border: none;
+            outline: none;
+            padding: 0;
+            cursor: pointer;
+        } */
+
+        /* #toggleBtn svg {
+  width: 24px;
+  height: 24px;
+  fill: black;  
+  transition: transform 0.2s ease;
+}
+
+#toggleBtn:hover svg {
+  transform: scale(1.1); 
+}
+.section-4.collapsed{
+    height: 127px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+.section-4.expanded{
+    height: 571px;
+    transition: height 0.3s ease;
+} */
     </style>
 </head>
 
@@ -292,61 +423,84 @@
             <div class="sub-section">
                 <img src="images/subtracts.svg" alt="subtracts icon" class="top-subtract">
                 <h2 class="goal">Reach Your body <span class="dot">Goals</span></h2>
-                <p class="para-goal">Personalized Training & Nutrition Plans Designed to Perfectly Align with Your Lifestyle, Fitness
+                <p class="para-goal">Personalized Training & Nutrition Plans Designed to Perfectly Align with Your
+                    Lifestyle, Fitness
                     Goals, and Daily Routine for Sustainable Results</p>
                 <div>
                     <div class="icon-container">
+                        <div class="image-stack"></div>
                         <img src="images/click.svg" class="circle">
-                        <img src="images/tick.svg">
-                        <p>Certified Personal Train</p>
+                        <img src="images/tick.svg" class="tick">
+                        <p class="sub-para">Certified Personal Train</p>
+                    </div>
+
+                    <div class="icon-container">
+                        <div class="image-stack">
+                            <img src="images/click.svg" class="circle">
+                            <img src="images/tick.svg" class="tick">
+                            <p>Customized Workout & Diet Plans</p>
+                        </div>
                     </div>
                     <div class="icon-container">
-                        <img src="images/click.svg" class="circle">
-                        <img src="images/tick.svg">
-                        <p>Customized Workout & Diet Plans</p>
+                        <div class="image-stack">
+                            <img src="images/click.svg" class="circle">
+                            <img src="images/tick.svg" class="tick">
+                            <p>100+ Client Transformations</p>
+                        </div>
                     </div>
                     <div class="icon-container">
-                        <img src="images/click.svg" class="circle">
-                        <img src="images/tick.svg">
-                        <p>100+ Client Transformations</p>
-                    </div>
-                    <div class="icon-container">
-                        <img src="images/click.svg" class="circle">
-                        <img src="images/tick.svg">
-                        <p>Train Anytime, Anywhere</p>
-                    </div>
-                    <div class="btn-link">
-                        <button class="btn-book">BOOK A FREE CONSULTANT <img src="images/arrow-up.svg" alt="ap-arrow">
-                        </button>
+                        <div class="image-stack">
+                            <img src="images/click.svg" class="circle">
+                            <img src="images/tick.svg" class="tick">
+                            <p>Train Anytime, Anywhere</p>
+                        </div>
                     </div>
                 </div>
-                <img src="images/subtract.svg" alt="subtract icon">
+                <div class="btn-link">
+                    <button class="btn-book">BOOK A FREE CONSULTANT <img src="images/arrow-up.svg" alt="ap-arrow">
+                    </button>
+                </div>
             </div>
+            <img src="images/subtract.svg" alt="subtract icon" class="bottom-subtract">
+        </div>
         </div>
         <hr>
-        <div class="section-4">
-            <div>
-                <h2>About Me </h2>
-                <p>Hi, I'm Lenka. Your Fitness Coach! 👋</p>
-                <p>With over 10 years of experience, I specialize in helping clients achieve their goals through
-                    personalized fitness plans.</p>
-                <div class="icon-container">
-                    <img src="images/click.svg" class="circle">
-                    <img src="images/tickw.svg">
-                    <p>European Certified</p>
+        <div class="section-4 collapsed" id="expandableSection">
+            <div class="dot-border">
+                <div class="sub-section4">
+                    <h2 class="bold">About Me </h2>
+                    <p class="para-fit">Hi, I'm Lenka. Your Fitness Coach! 👋</p>
+                    <p>With over 10 years of experience, I specialize in helping clients achieve their goals through
+                        personalized fitness plans.</p>
+                    <div class="whole-icon">
+                        <div class="icon-container">
+                            <img src="images/click.svg" class="circle">
+                            <img src="images/tickw.svg" class="tick">
+                            <p>European Certified</p>
+                        </div>
+                        <div class="icon-container">
+                            <img src="images/click.svg" class="circle">
+                            <img src="images/tickw.svg" class="tick">
+                            <p>Powerlifter - 52kg IPF</p>
+                        </div>
+                        <div class="icon-container">
+                            <img src="images/click.svg" class="circle">
+                            <img src="images/tickw.svg" class="tick">
+                            <p>Strength Coach</p>
+                        </div>
+                    </div>
+                    <button id="toggle-btn" aria-label="Toggele Section">
+                        <svg width="40px" height="40px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                            class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M53.212 10.785c-11.715-11.714-30.711-11.714-42.426 0c-11.715 11.717-11.715 30.711 0 42.427c11.715 11.717 30.711 11.717 42.426 0c11.717-11.716 11.717-30.71 0-42.427M31.999 47l-20-20h40l-20 20"
+                                fill="#000000"></path>
+                        </svg>
+                    </button>
                 </div>
-                <div class="icon-container">
-                    <img src="images/click.svg" class="circle">
-                    <img src="images/tickw.svg">
-                    <p>Powerlifter - 52kg IPF</p>
-                </div>
-                <div class="icon-container">
-                    <img src="images/click.svg" class="circle">
-                    <img src="images/tickw.svg">
-                    <p>Strength Coach</p>
-                </div>
+                <img src="images/women3.jpg" alt="women" class="img-cretificate">
             </div>
-            <div><img src="images/women3.jpg" alt="women"></div>
         </div>
         <hr>
         <div class="section-5">
