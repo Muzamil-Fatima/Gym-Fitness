@@ -13,9 +13,50 @@
         /*----------------------------------- section  3  -----------------------  */
         /*----------------------------------- section  5 -----------------------  */
         /*----------------------------------- Footer  -----------------------  */
-       footer{
+        footer {
+            border: 2px solid red;
+            margin: 7rem;
+            display: grid;
+            row-gap: 4rem;
+        }
 
-       }
+        .columns {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 20px;
+        }
+
+        .right-reserved {
+            grid-template-columns: 1fr 0.5fr 1fr 1fr 1fr;
+            column-gap: 30px;
+            /* align-items: center; */
+        }
+
+        .right-reserved ul {
+            display: flex;
+            list-style: none;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .col-1 {
+            flex-direction: column;
+            column-gap: 1rem;
+        }
+
+        .social-icon {
+            flex-direction: row;
+            gap: 1rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+        .email-block{
+            display: flex;
+            /* flex-direction: column; */
+            /* gap: 0.5rem; */
+        }
     </style>
 </head>
 
@@ -234,7 +275,7 @@
                     </div>
                 </div>
             </div>
-            <div id="learn-btn"><button class="learn-btn" >Learn More</button></div>
+            <div id="learn-btn"><button class="learn-btn">Learn More</button></div>
 
         </div>
         <hr>
@@ -242,12 +283,12 @@
 
         </div>
     </main>
-     <footer class="font2">
-         <div><img src="images/Logo.svg" alt="Logo"></div>
+    <footer class="font2">
+        <div><img src="images/Logo.svg" alt="Logo"></div>
         <div class="columns">
-            <div class=" col-1">
+            <div class=" col-1 flex">
                 <div class="footer-icon">
-                    <ul class="social-icon">
+                    <ul class="social-icon flex">
                         <li><svg fill="white" width="42px" height="42px" viewBox="-3 0 19 19"
                                 xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
                                 <path
@@ -282,29 +323,29 @@
                 </ul>
             </div>
             <div class=" col-3">
-                <h3 class="w7 text-base opacity-75">News</h3>
+                <h3 class="w7 text-base ">News</h3>
                 <h4 class="w4 text-base opacity-75">Fitness Blog</h4>
                 <div class="w4 text-base opacity-75">FAQ</div>
             </div>
             <div class=" col-4">
-                <h2 class="w7 text-base opacity-75">Fitness Services</h2>
+                <h2 class="w7 text-base">Fitness Services</h2>
                 <div class="w4 text-base opacity-75">Book a Free Consultation</div>
                 <div class="w4 text-base opacity-75">Refer a Friend & Earn Rewards</div>
                 <div class="w4 text-base opacity-75">Membership & Pricing</div>
             </div>
         </div>
         <div class="right-reserved">
-            <div class="col-5">
-                <div>
+            <ul class="col-5">
+                <li>
                     <p class="w5 text-base">©2025 Muzamil-Fatima. All right reserved</p>
-                </div>
-                <div class="text-base">Privacy Plicy</div>
-                <div class="text-base">Legel Notice</div>
-                <div class="text-base">Cookies Policy</div>
-                <div class="text-base">Terms & Condition</div>
-            </div>
+                </li>
+                <li class="text-base">Privacy Plicy</li>
+                <li class="text-base">Legel Notice</li>
+                <li class="text-base">Cookies Policy</li>
+                <li class="text-base">Terms & Condition</li>
+            </ul>
         </div>
-    </footer> 
+    </footer>
     <script src="script.js"></script>
 </body>
 
