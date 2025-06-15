@@ -9,90 +9,13 @@
     <link rel="stylesheet" href="Utility.css">
     <style>
         /*----------------------------------- section  2  -----------------------  */
-
-
-
-        /*----------------------------------- Footer  -----------------------  */
-        footer {
-            font-family: "Poppins", sans-serif;
-            color: #ffffff;
-            padding: 20px;
-            line-height: 1.9;
-            justify-content: space-between;
-            border: 2px solid red;
-
-        }
-
-        .columns {
-            display: flex;
-            column-gap: 30px;
-            width: 1527px;
-            height: 70vh;
-            justify-content: center;
-            column-gap: 10%;
-            border: 2px solid rgb(6, 51, 154);
-            /* justify-content: space-around; */
-            align-items: center;
-            line-height: 2.5;
-        }
-
-        footer-column {
-            justify-content: space-between;
-            display: flex;
-        }
-
-        .col-1 {
-            border: 2px solid red;
-        }
-
-        .social-icon {
-            text-decoration: none;
-            display: flex;
-            list-style: none;
-        }
-
-
-        .col-2 {
-            border: 2px solid red;
-
-        }
-
-        .col-3 {
-            border: 2px solid red;
-
-        }
-
-        .col-4 {
-            border: 2px solid red;
-
-        }
-
-        .col-5 {
-            border: 2px solid red;
-            gap: 10px;
-            display: flex;
-            align-items: center;
-
-
-        }
-
-        .news-para {
-            font-weight: 600;
-            font-size: 22px;
-
-        }
-
-        .bottom-row {
-            font-size: 16px;
-            font-weight: 400;
-            margin-left: 40px;
-            float: left;
-        }
-
         /*----------------------------------- section  4  -----------------------  */
         /*----------------------------------- section  3  -----------------------  */
         /*----------------------------------- section  5 -----------------------  */
-     
+        /*----------------------------------- Footer  -----------------------  */
+       footer{
+
+       }
     </style>
 </head>
 
@@ -319,11 +242,11 @@
 
         </div>
     </main>
-    <!-- <footer>
+     <footer class="font2">
+         <div><img src="images/Logo.svg" alt="Logo"></div>
         <div class="columns">
-            <div class="footer-column col-1">
-                <div><img src="images/Logo.svg" alt="Logo"></div>
-                <div>
+            <div class=" col-1">
+                <div class="footer-icon">
                     <ul class="social-icon">
                         <li><svg fill="white" width="42px" height="42px" viewBox="-3 0 19 19"
                                 xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
@@ -342,45 +265,46 @@
                             </svg></li>
                     </ul>
                 </div>
-                <p class="news-para">Subscribe to our newsletter!</p>
+                <p class="w6 text-lg">Subscribe to our newsletter!</p>
                 <div class="email-block">
-                    <input type="email">
+                    <label for="email" class="w4 text-base">Enter Email</label>
+                    <input type="email" required>
                     <img src="images/arrow-up.svg" alt="arrow-icon">
                 </div>
             </div>
-            <div class="footer-column col-2">
-                <h3>Quick links</h3>
-                <ul>
+            <div class=" col-2">
+                <h3 class="w7 text-base">Quick links</h3>
+                <ul class="w4 text-base opacity-75">
                     <li>Home</li>
                     <li>About Me</li>
                     <li>Services</li>
                     <li>Contact</li>
                 </ul>
             </div>
-            <div class="footer-column col-3">
-                <h3>News</h3>
-                <h4>Fitness Blog</h4>
-                <div>FAQ</div>
+            <div class=" col-3">
+                <h3 class="w7 text-base opacity-75">News</h3>
+                <h4 class="w4 text-base opacity-75">Fitness Blog</h4>
+                <div class="w4 text-base opacity-75">FAQ</div>
             </div>
-            <div class="footer-column col-4">
-                <h2>Fitness Services</h2>
-                <div>Book a Free Consultation</div>
-                <div>Refer a Friend & Earn Rewards</div>
-                <div>Membership & Pricing</div>
+            <div class=" col-4">
+                <h2 class="w7 text-base opacity-75">Fitness Services</h2>
+                <div class="w4 text-base opacity-75">Book a Free Consultation</div>
+                <div class="w4 text-base opacity-75">Refer a Friend & Earn Rewards</div>
+                <div class="w4 text-base opacity-75">Membership & Pricing</div>
             </div>
         </div>
         <div class="right-reserved">
             <div class="col-5">
-                <div class="bottom-row">
-                    <p>©2025 Muzamil-Fatima. All right reserved</p>
+                <div>
+                    <p class="w5 text-base">©2025 Muzamil-Fatima. All right reserved</p>
                 </div>
-                <div class="bottom-row">Privacy Plicy</div>
-                <div class="bottom-row">Legel Notice</div>
-                <div class="bottom-row">Cookies Policy</div>
-                <div class="bottom-row">Terms & Condition</div>
+                <div class="text-base">Privacy Plicy</div>
+                <div class="text-base">Legel Notice</div>
+                <div class="text-base">Cookies Policy</div>
+                <div class="text-base">Terms & Condition</div>
             </div>
         </div>
-    </footer> -->
+    </footer> 
     <script src="script.js"></script>
 </body>
 
