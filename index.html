@@ -9,105 +9,31 @@
     <style>
         /*----------------------------------- section  2  -----------------------  */
 
-
-        .strip {
-            position: relative;
-            width: 200vw;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            font-weight: 500;
-            font-size: 1rem;
-            letter-spacing: 1px;
-            white-space: nowrap;
-            animation: scroll 15s linear infinite;
-        }
-
-        .strip span {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .dot {
-            height: 8px;
-            width: 8px;
-            background-color: #ff5a3c;
-            border-radius: 50%;
-            display: inline-block;
-        }
-
-        .banner {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .bar {
-            width: 200%;
-            height: 60px;
-            position: absolute;
-            left: -50%;
-            display: flex;
-            align-items: center;
-        }
-
-        .bar.white {
-            background: #f5f5f5;
-            top: 35%;
-            transform: rotate(-10deg);
-            z-index: 2;
-        }
-
-        .bar.dark {
-            background: #2d2f3a;
-            top: 20%;
-            transform: rotate(-10deg);
-            z-index: 1;
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-
-
         /*----------------------------------- section  5 -----------------------  */
-        .circle-bg {
-            position: absolute;
-            top: 58.09%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 524px;
-            /* larger than image */
-            height: 523px;
-            background-color: rgb(129, 124, 124);
-            border-radius: 50%;
-            z-index: 0;
-            /* behind */
-        }
+
 
         /*----------------------------------- Footer  -----------------------  */
         footer {
-            color: white;
-            width: 90vw;
-            border: 2px solid red;
-            display: grid;
-            grid-template-columns: repeat(4, minmax(100px, 40px));
-            /* justify-content: center; */
-            align-items: center;
+            font-family: "Poppins", sans-serif;
+            color: #ffffff;
             padding: 20px;
-            row-gap: 10px;
-            column-gap: 44px;
             line-height: 1.9;
             justify-content: space-between;
+            border: 2px solid red;
 
+        }
+
+        .columns {
+            display: flex;
+            column-gap: 30px;
+            width: 1527px;
+            height: 70vh;
+            justify-content: center;
+            column-gap: 10%;
+            border: 2px solid rgb(6, 51, 154);
+            /* justify-content: space-around; */
+            align-items: center;
+            line-height: 2.5;
         }
 
         footer-column {
@@ -115,210 +41,57 @@
             display: flex;
         }
 
-        /* .col-1 {}
+        .col-1 {
+            border: 2px solid red;
+        }
 
         .social-icon {
             text-decoration: none;
-
+            display: flex;
             list-style: none;
         }
 
         input {}
 
-        .col-2 {}
+        .col-2 {
+            border: 2px solid red;
 
-        .col-3 {}
+        }
 
-        .col-4 {}
+        .col-3 {
+            border: 2px solid red;
+
+        }
+
+        .col-4 {
+            border: 2px solid red;
+
+        }
 
         .col-5 {
-            display: flex;
-            justify-content: space-between;
-            align-content: space-between;
-
-
-        } */
-        /*----------------------------------- section  3  -----------------------  */
-        .section-3 {
-            display: flex;
-            /* height: 635px; */
-            color: white;
-            justify-content: space-around;
-            width: 80vw;
-            margin: 40px auto;
-        }
-
-        .circle-wrapper {
-            position: relative;
-            display: inline-block;
-        }
-
-        .profile-img {
-            position: relative;
-            z-index: 1;
-            display: block;
-            height: 635px;
-            width: 524.02px;
-        }
-
-        .sub-section {
-            float: left;
             border: 2px solid red;
-            width: 42%;
-        }
-
-        .goal {
-            font-family: "HansonBold", sans-serif;
-            font-weight: 700;
-            font-size: 51.12px;
-            margin-top: 20px;
-        }
-
-        .para-goal {
-            font-family: "Poppins", sans-serif;
-            font-size: 20.45px;
-            color: rgb(114, 110, 110);
-            font-weight: 400;
-            line-height: 1.5;
-        }
-
-        .top-subtract {
-            float: right;
-            margin-bottom: 3px;
-        }
-
-        .icon-container {
+            gap: 10px;
             display: flex;
-            font-family: 'Poppins', sans-serif;
-            gap: 5px;
-            text-align: center;
-            justify-content: center;
-        }
+            align-items: center;
 
-        .image-stack {
-            position: relative;
-        }
-
-        .tick {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            justify-content: center;
-            margin: auto auto 30px auto;
 
         }
 
-        .circle {
-            width: 40px;
-            height: 40px;
+        .news-para {
+            font-weight: 600;
+            font-size: 22px;
+
         }
 
-        .bottom-subtract {
-            /* float: bottom; */
+        .bottom-row {
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 40px;
+            float: left;
         }
-
-        .btn-book {
-            border-radius: 50px;
-            color: white;
-            background: transparent;
-            height: 50px;
-            width: 299px;
-            border: 2px solid white;
-            position: absolute;
-            margin: 20px;
-        }
-
-        .sub-para {}
 
         /*----------------------------------- section  4  -----------------------  */
-        .section-4 {
-            background-color: #ff5a3c;
-            color: white;
-            display: flex;
-            justify-content: space-around;
-            height: 571px;
-            font-family: 'Poppins', sans-serif;
-            padding: 25px;
-            box-sizing: border-box;
-            border-radius: 25px;
-        }
-
-        .dot-border {
-            border: 2px dashed black;
-            box-sizing: border-box;
-            width: 100%;
-            padding: 20px 20px;
-            border-radius: 25px;
-        }
-
-        .img-cretificate {
-            float: right;
-            /* border: 2px solid red; */
-            height: 370px;
-            /* position: relative; */
-            right: 69px;
-        }
-
-        .sub-section4 {
-            width: 32%;
-            /* border: 2px solid red; */
-            /* margin: 20px; */
-            /* justify-content: center; */
-            line-height: 1.5;
-        }
-
-        .bold {
-            font-weight: 700;
-            font-size: 43px;
-            font-family: "HansonBold", sans-serif;
-        }
-
-
-        .para-fit {
-            font-size: 20px;
-            /* margin-bottom: 5px; */
-        }
-
-        .icon-container {
-            /* margin: 25px; */
-            display: flex;
-            /* position: relative; */
-        }
-.tick{
-    position: relative;
-    left: auto;
-}
-
-        /* #toggleBtn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: transparent;
-            border: none;
-            outline: none;
-            padding: 0;
-            cursor: pointer;
-        } */
-
-        /* #toggleBtn svg {
-  width: 24px;
-  height: 24px;
-  fill: black;  
-  transition: transform 0.2s ease;
-}
-
-#toggleBtn:hover svg {
-  transform: scale(1.1); 
-}
-.section-4.collapsed{
-    height: 127px;
-    overflow: hidden;
-    transition: height 0.3s ease;
-}
-.section-4.expanded{
-    height: 571px;
-    transition: height 0.3s ease;
-} */
+        /*----------------------------------- section  3  -----------------------  */
     </style>
 </head>
 
@@ -428,89 +201,81 @@
                     Goals, and Daily Routine for Sustainable Results</p>
                 <div>
                     <div class="icon-container">
-                        <div class="image-stack"></div>
                         <img src="images/click.svg" class="circle">
                         <img src="images/tick.svg" class="tick">
-                        <p class="sub-para">Certified Personal Train</p>
-                    </div>
-
-                    <div class="icon-container">
-                        <div class="image-stack">
-                            <img src="images/click.svg" class="circle">
-                            <img src="images/tick.svg" class="tick">
-                            <p>Customized Workout & Diet Plans</p>
-                        </div>
+                        <p class="sub-para">Certified Personal Trainer</p>
                     </div>
                     <div class="icon-container">
-                        <div class="image-stack">
-                            <img src="images/click.svg" class="circle">
-                            <img src="images/tick.svg" class="tick">
-                            <p>100+ Client Transformations</p>
-                        </div>
+                        <img src="images/click.svg" class="circle">
+                        <img src="images/tick.svg" class="tick">
+                        <p>Customized Workout & Diet Plans</p>
                     </div>
                     <div class="icon-container">
-                        <div class="image-stack">
-                            <img src="images/click.svg" class="circle">
-                            <img src="images/tick.svg" class="tick">
-                            <p>Train Anytime, Anywhere</p>
-                        </div>
+                        <img src="images/click.svg" class="circle">
+                        <img src="images/tick.svg" class="tick">
+                        <p>100+ Client Transformations</p>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/click.svg" class="circle">
+                        <img src="images/tick.svg" class="tick">
+                        <p>Train Anytime, Anywhere</p>
                     </div>
                 </div>
                 <div class="btn-link">
                     <button class="btn-book">BOOK A FREE CONSULTANT <img src="images/arrow-up.svg" alt="ap-arrow">
                     </button>
                 </div>
+                <img src="images/subtract.svg" alt="subtract icon" class="bottom-subtract">
             </div>
-            <img src="images/subtract.svg" alt="subtract icon" class="bottom-subtract">
-        </div>
         </div>
         <hr>
-        <div class="section-4 collapsed" id="expandableSection">
-            <div class="dot-border">
-                <div class="sub-section4">
-                    <h2 class="bold">About Me </h2>
-                    <p class="para-fit">Hi, I'm Lenka. Your Fitness Coach! 👋</p>
-                    <p>With over 10 years of experience, I specialize in helping clients achieve their goals through
-                        personalized fitness plans.</p>
-                    <div class="whole-icon">
-                        <div class="icon-container">
-                            <img src="images/click.svg" class="circle">
-                            <img src="images/tickw.svg" class="tick">
-                            <p>European Certified</p>
-                        </div>
-                        <div class="icon-container">
-                            <img src="images/click.svg" class="circle">
-                            <img src="images/tickw.svg" class="tick">
-                            <p>Powerlifter - 52kg IPF</p>
-                        </div>
-                        <div class="icon-container">
-                            <img src="images/click.svg" class="circle">
-                            <img src="images/tickw.svg" class="tick">
-                            <p>Strength Coach</p>
-                        </div>
+        <div class="section-4 collapsed " id="expandableSection">
+            <!-- <div class="dot-border"> -->
+            <div class="sub-section4">
+                <h2 class="bold">About Me </h2>
+                <p class="para-fit">Hi, I'm Lenka. Your Fitness Coach! 👋</p>
+                <p class="para-experience">With over <span class="para-span"> 10 years of experience</span>, I
+                    specialize in helping clients achieve their goals through
+                    personalized fitness plans.</p>
+                <div class="whole-icon">
+                    <div class="icon-container">
+                        <img src="images/click.svg" class="circle">
+                        <img src="images/tickw.svg" class="tick">
+                        <p>European Certified</p>
                     </div>
-                    <button id="toggle-btn" aria-label="Toggele Section">
-                        <svg width="40px" height="40px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
-                            class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet">
-                            <path
-                                d="M53.212 10.785c-11.715-11.714-30.711-11.714-42.426 0c-11.715 11.717-11.715 30.711 0 42.427c11.715 11.717 30.711 11.717 42.426 0c11.717-11.716 11.717-30.71 0-42.427M31.999 47l-20-20h40l-20 20"
-                                fill="#000000"></path>
-                        </svg>
-                    </button>
+                    <div class="icon-container">
+                        <img src="images/click.svg" class="circle">
+                        <img src="images/tickw.svg" class="tick">
+                        <p>Powerlifter - 52kg IPF</p>
+                    </div>
+                    <div class="icon-container">
+                        <img src="images/click.svg" class="circle">
+                        <img src="images/tickw.svg" class="tick">
+                        <p>Strength Coach</p>
+                    </div>
                 </div>
-                <img src="images/women3.jpg" alt="women" class="img-cretificate">
+                <button id="toggle-btn" aria-label="Toggele Section">
+                    <svg width="40px" height="40px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                        class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet">
+                        <path
+                            d="M53.212 10.785c-11.715-11.714-30.711-11.714-42.426 0c-11.715 11.717-11.715 30.711 0 42.427c11.715 11.717 30.711 11.717 42.426 0c11.717-11.716 11.717-30.71 0-42.427M31.999 47l-20-20h40l-20 20"
+                            fill="#000000"></path>
+                    </svg>
+                </button>
             </div>
+            <!-- </div> -->
+            <div><img src="images/women3.jpg" alt="women" class="img-cretificate"></div>
         </div>
         <hr>
         <div class="section-5">
             <div>
-                <h2>My <span>Services</span></h2>
+                <h2 class="bold">My <span class="dot">Services</span></h2>
                 <img src="images/top-bottom-arrow.jpg" alt="top-bottom-arrow-icon">
             </div>
             <div class="left-container">
                 <div class="side-icon">
-                    <img src="images/mealplan.svg" alt="mealplan-icon">
+                    <img src="images/mealplan.svg" alt="mealplan-icon" class="circle-bg">
                     <p>Custom fitness & meal plans</p>
                 </div>
                 <div class="side-icon">
@@ -551,61 +316,66 @@
         </div>
     </main>
     <footer>
-        <div class="footer-column col-1">
-            <div><img src="images/Logo.svg" alt="Logo"></div>
-            <div class="social-icon">
+        <div class="columns">
+            <div class="footer-column col-1">
+                <div><img src="images/Logo.svg" alt="Logo"></div>
+                <div>
+                    <ul class="social-icon">
+                        <li><svg fill="white" width="42px" height="42px" viewBox="-3 0 19 19"
+                                xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
+                                <path
+                                    d="M12.538 9.62a6.038 6.038 0 1 0-6.981 5.964v-4.22H4.023V9.62h1.534V8.29a2.13 2.13 0 0 1 2.28-2.349 9.285 9.285 0 0 1 1.352.118v1.486h-.762a.873.873 0 0 0-.984.943V9.62h1.675l-.268 1.746H7.443v4.22a6.04 6.04 0 0 0 5.095-5.966z" />
+                            </svg></li>
+                        <li><svg fill="white" width="42px" height="420px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
+                                <path
+                                    d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z" />
+                            </svg></li>
+                        <li><svg fill="white" width="42px" height="42px" viewBox="0 0 14 14" role="img"
+                                focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m 4.9520184,12.936803 c -1.12784,-0.2039 -2.19411,-0.9875 -2.66789,-1.9606 -0.32895,-0.6757 -0.45541,-1.3901003 -0.37418,-2.1137003 0.15054,-1.3412 0.84482,-2.4395 1.92406,-3.0439 0.56899,-0.3186 1.38421,-0.4769 1.991,-0.3867 l 0.35091,0.052 9e-5,1.0725 9e-5,1.0725 -0.332,-0.014 c -0.79998,-0.033 -1.39595,0.3096 -1.70379,0.9784 -0.1473,0.32 -0.18461,0.8887 -0.081,1.2351 0.12773,0.4273003 0.50542,0.8132003 0.96145,0.9825003 0.15535,0.058 0.32344,0.08 0.61152,0.079 0.35862,-4e-4 0.42448,-0.013 0.67663,-0.1323 0.36505,-0.1726 0.63141,-0.4231 0.78797,-0.7411 0.10147,-0.2061003 0.13414,-0.3430003 0.16587,-0.6951003 0.0217,-0.2412 0.0401,-2.2122 0.0409,-4.38 l 10e-4,-3.94149998 0.68371,0 c 0.37605,0 0.8277,0.012 1.00368,0.027 l 0.31995,0.027 0,0.1584 c 0,0.3813 0.22299,1.1127 0.45156,1.4812 0.0571,0.092 0.2564996,0.3178 0.4431796,0.5018 0.36068,0.3555 0.66494,0.5352 1.13352,0.6692 0.138,0.04 0.28359,0.089 0.32353,0.109 0.0399,0.02 0.11522,0.038 0.16728,0.038 0.0521,4e-4 0.13701,0.012 0.18876,0.026 l 0.0941,0.025 0,0.9948 0,0.9948 -0.17773,-0.019 c -0.9611,-0.1037 -1.72925,-0.3601 -2.3423096,-0.782 -0.30468,-0.2096 -0.33102,-0.222 -0.30218,-0.1422 0.0104,0.029 0.003,1.1249 -0.0164,2.436 -0.0336,2.2728 -0.0396,2.3992 -0.12781,2.7173003 -0.33904,1.2222 -1.09994,2.1297 -2.10183,2.5068 -0.6126,0.2306 -1.39679,0.2932 -2.09405,0.1671 z" />
+                            </svg></li>
+                    </ul>
+                </div>
+                <p class="news-para">Subscribe to our newsletter!</p>
+                <div class="email-block">
+                    <input type="email">
+                    <img src="images/arrow-up.svg" alt="arrow-icon">
+                </div>
+            </div>
+            <div class="footer-column col-2">
+                <h3>Quick links</h3>
                 <ul>
-                    <li><svg fill="white" width="42px" height="42px" viewBox="-3 0 19 19"
-                            xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
-                            <path
-                                d="M12.538 9.62a6.038 6.038 0 1 0-6.981 5.964v-4.22H4.023V9.62h1.534V8.29a2.13 2.13 0 0 1 2.28-2.349 9.285 9.285 0 0 1 1.352.118v1.486h-.762a.873.873 0 0 0-.984.943V9.62h1.675l-.268 1.746H7.443v4.22a6.04 6.04 0 0 0 5.095-5.966z" />
-                        </svg></li>
-                    <li><svg fill="white" width="42px" height="420px" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
-                            <path
-                                d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z" />
-                        </svg></li>
-                    <li><svg fill="white" width="42px" height="42px" viewBox="0 0 14 14" role="img" focusable="false"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="m 4.9520184,12.936803 c -1.12784,-0.2039 -2.19411,-0.9875 -2.66789,-1.9606 -0.32895,-0.6757 -0.45541,-1.3901003 -0.37418,-2.1137003 0.15054,-1.3412 0.84482,-2.4395 1.92406,-3.0439 0.56899,-0.3186 1.38421,-0.4769 1.991,-0.3867 l 0.35091,0.052 9e-5,1.0725 9e-5,1.0725 -0.332,-0.014 c -0.79998,-0.033 -1.39595,0.3096 -1.70379,0.9784 -0.1473,0.32 -0.18461,0.8887 -0.081,1.2351 0.12773,0.4273003 0.50542,0.8132003 0.96145,0.9825003 0.15535,0.058 0.32344,0.08 0.61152,0.079 0.35862,-4e-4 0.42448,-0.013 0.67663,-0.1323 0.36505,-0.1726 0.63141,-0.4231 0.78797,-0.7411 0.10147,-0.2061003 0.13414,-0.3430003 0.16587,-0.6951003 0.0217,-0.2412 0.0401,-2.2122 0.0409,-4.38 l 10e-4,-3.94149998 0.68371,0 c 0.37605,0 0.8277,0.012 1.00368,0.027 l 0.31995,0.027 0,0.1584 c 0,0.3813 0.22299,1.1127 0.45156,1.4812 0.0571,0.092 0.2564996,0.3178 0.4431796,0.5018 0.36068,0.3555 0.66494,0.5352 1.13352,0.6692 0.138,0.04 0.28359,0.089 0.32353,0.109 0.0399,0.02 0.11522,0.038 0.16728,0.038 0.0521,4e-4 0.13701,0.012 0.18876,0.026 l 0.0941,0.025 0,0.9948 0,0.9948 -0.17773,-0.019 c -0.9611,-0.1037 -1.72925,-0.3601 -2.3423096,-0.782 -0.30468,-0.2096 -0.33102,-0.222 -0.30218,-0.1422 0.0104,0.029 0.003,1.1249 -0.0164,2.436 -0.0336,2.2728 -0.0396,2.3992 -0.12781,2.7173003 -0.33904,1.2222 -1.09994,2.1297 -2.10183,2.5068 -0.6126,0.2306 -1.39679,0.2932 -2.09405,0.1671 z" />
-                        </svg></li>
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Services</li>
+                    <li>Contact</li>
                 </ul>
             </div>
-            <p>Subscribe to our newsletter!</p>
-            <div class="email-block">
-                <input type="email">
-                <img src="images/arrow-up.svg" alt="arrow-icon">
+            <div class="footer-column col-3">
+                <h3>News</h3>
+                <h4>Fitness Blog</h4>
+                <div>FAQ</div>
+            </div>
+            <div class="footer-column col-4">
+                <h2>Fitness Services</h2>
+                <div>Book a Free Consultation</div>
+                <div>Refer a Friend & Earn Rewards</div>
+                <div>Membership & Pricing</div>
             </div>
         </div>
-        <div class="footer-column col-2">
-            <h3>Quick links</h3>
-            <ul>
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Services</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <div class="footer-column col-3">
-            <h3>News</h3>
-            <h4>Fitness Blog</h4>
-            <div>FAQ</div>
-        </div>
-        <div class="footer-column col-4">
-            <h2>Fitness Services</h2>
-            <div>Book a Free Consultation</div>
-            <div>Refer a Friend & Earn Rewards</div>
-            <div>Membership & Pricing</div>
-        </div>
-        <div class="col-5">
-            <div>
-                <p>©2025 Muzamil-Fatima. All right reserved</p>
+        <div class="right-reserved">
+            <div class="col-5">
+                <div class="bottom-row">
+                    <p>©2025 Muzamil-Fatima. All right reserved</p>
+                </div>
+                <div class="bottom-row">Privacy Plicy</div>
+                <div class="bottom-row">Legel Notice</div>
+                <div class="bottom-row">Cookies Policy</div>
+                <div class="bottom-row">Terms & Condition</div>
             </div>
-            <div>Privacy Plicy</div>
-            <div> Legel Notice</div>
-            <div> Cookies Policy</div>
-            <div>Terms & Condition</div>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>

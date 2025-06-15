@@ -12,6 +12,7 @@
   color: rgb(241, 92, 54);
 } */
 body {
+  /* font-family: "Poppins", sans-serif; */
   margin: 0;
   padding: 0;
   background-color: #1f1f1f;
@@ -20,6 +21,7 @@ body {
   justify-content: center;
   margin: auto;
   overflow-x: hidden;
+  color: white;
 }
 .dot{
   color: rgb(241, 92, 54);
@@ -218,3 +220,252 @@ nav ul li a {
 }
 
 /*----------------------------------- section  2  -----------------------  */
+
+
+        .strip {
+            position: relative;
+            width: 200vw;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-weight: 500;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            animation: scroll 15s linear infinite;
+        }
+
+        .strip span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .dot {
+            height: 8px;
+            width: 8px;
+            background-color: #ff5a3c;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .banner {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bar {
+            width: 200%;
+            height: 60px;
+            position: absolute;
+            left: -50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .bar.white {
+            background: #f5f5f5;
+            top: 35%;
+            transform: rotate(-10deg);
+            z-index: 2;
+        }
+
+        .bar.dark {
+            background: #2d2f3a;
+            top: 20%;
+            transform: rotate(-10deg);
+            z-index: 1;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+/*----------------------------------- section  3  -----------------------  */
+
+ .section-3 {
+            display: flex;
+            color: #ffffff;
+            justify-content: space-around;
+            width: 80vw;
+            margin: 40px auto;
+        }
+
+        .profile-img {
+            position: relative;
+            z-index: 1;
+            display: block;
+            height: 635px;
+            width: 524px;
+        }
+
+        .sub-section {
+            float: left;
+            width: 38%;
+            font-family: "Poppins", sans-serif;
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .goal {
+            font-family: "HansonBold", sans-serif;
+            font-weight: 700;
+            font-size: 51.12px;
+            margin-top: 20px;
+        }
+
+        .para-goal {
+            opacity: 50%;
+        }
+
+        .top-subtract {
+            float: right;
+            margin-bottom: 3px;
+        }
+        .btn-book {
+            border-radius: 50px;
+            color: #ffffff;
+            background: transparent;
+            height: 50px;
+            width: 299px;
+            border: 2px solid #ffffff;
+            font-weight: 500;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        /*----------------------------------- section  4  -----------------------  */
+        .section-4 {
+            background-color: #ff5a3c;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            height: 571px;
+            font-family: 'Poppins', sans-serif;
+            padding: 25px;
+            box-sizing: border-box;
+            border-radius: 25px;
+        }
+
+        .dot-border {
+            border: 2px dashed black;
+            box-sizing: border-box;
+            /* width: 100%; */
+            padding: 20px ;
+            border-radius: 25px;
+            z-index: 1;
+        }
+
+        .img-cretificate {
+            float: right;
+            /* border: 2px solid red; */
+            /* height: 370px; */
+            /* position: relative; */
+            /* right: 69px; */
+            height: 546px;
+        }
+
+        .sub-section4 {
+            width: 30%;
+            /* border: 2px solid red; */
+            /* margin: 20px; */
+            /* justify-content: center; */
+            line-height: 1.5;
+        }
+
+        .bold {
+            font-weight: 700;
+            font-size: 43px;
+            font-family: "HansonBold", sans-serif;
+        }
+
+.para-experience{
+    opacity: 65%;
+    width: 447;
+    height: 104px;
+    height: 1.5;
+    font-size: 18px;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 400;
+}
+.para-span{
+    font-weight: 600;
+}
+        .para-fit {
+            font-size: 20px;
+            /* margin-bottom: 5px; */
+        }
+
+        .icon-container {
+            margin:23px 0px;
+            border: 2px solid black;
+            display: flex;
+            position: relative;
+        }
+.tick{
+    position: relative;
+    left: -30px;
+    height: 31px;
+    width: 24px;
+    font-weight: bold;
+    
+}
+
+        #toggle-btn{
+            position: absolute;
+            /* top: 10px; */
+            /* right: 10px; */
+            background: transparent;
+            border: none;
+            outline: none;
+            padding: 0;
+            cursor: pointer;
+        } 
+
+ /* #toggleBtn svg {
+  width: 24px;
+  height: 24px;
+  fill: black;  
+  transition: transform 0.2s ease;
+}
+
+#toggleBtn:hover svg {
+  transform: scale(1.1); 
+}
+.section-4.collapsed{
+    height: 127px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+.section-4.expanded{
+    height: 571px;
+    transition: height 0.3s ease;
+}  */
+/*----------------------------------- section  5  -----------------------  */
+ .circle-bg {
+            /* position: absolute; */
+            /* top: 58.09%; */
+            /* left: 50%; */
+            /* transform: translate(-50%, -50%); */
+            /* width: 524px; */
+            /* larger than image */
+            /* height: 523px; */
+            background-color: rgb(129, 124, 124);
+            border-radius: 50%;
+            /* z-index: 1; */
+            /* behind */
+        }
+        .section-5{
+             font-family: "Poppins", sans-serif;
+             font-weight: 400;
+             font-size: 33px
+        }
+/*----------------------------------- section  6  -----------------------  */
+/*----------------------------------- section  7  -----------------------  */
