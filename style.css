@@ -524,6 +524,84 @@ nav ul li a {
     height: 571px;
     transition: height 0.3s ease;
 }  */
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .section-4 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .sub-section4 {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .img-cretificate {
+    height: auto;
+    max-width: 90%;
+  }
+
+  .bold {
+    font-size: 36px;
+  }
+
+  .para-fit {
+    font-size: 18px;
+  }
+
+  .para-experience {
+    font-size: 16px;
+  }
+
+  .icon-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  #toggle-btn {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .bold {
+    font-size: 28px;
+  }
+
+  .para-fit,
+  .para-experience {
+    font-size: 15px;
+  }
+
+  .icon-container {
+    margin: 15px 0;
+  }
+
+  .img-cretificate {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tick,
+  .circle {
+    width: 20px;
+    height: 20px;
+  }
+
+  #toggle-btn svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /*----------------------------------- section  5  -----------------------  */
 .circle-bg {
   width: 80px;
