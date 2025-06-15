@@ -1,0 +1,96 @@
+.font1 {
+  font-family: "HansonBold", sans-serif;
+  font-weight: 700;
+}
+.font2 {
+  font-family: "Poppins", sans-serif;
+}
+.dot {
+  color: rgb(241, 92, 54);
+}
+.c1 {
+  color: #f15c36;
+}
+.c2 {
+  color: #272727;
+}
+.c3 {
+  color: #191919;
+}
+.c4 {
+  color: #f1f1f1;
+}
+.c1-bg {
+  color: #f15c36;
+}
+.c2-bg {
+  background-color: #272727;
+}
+
+.c3-bg {
+  background-color: #191919;
+}
+
+.c4-bg {
+  background-color: #f1f1f1;
+}
+.c5 {
+  color: #ffffff;
+}
+.c5-bg {
+  background-color: #ffffff;
+}
+/* -------------------------------flex property------------------------------ */
+.flex{
+    display: flex;
+}
+.btn-fill{
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 149px;
+    height: 61px;
+    background-color: #f15c36;
+}
+.btn-fill:hover{
+    background: transparent;
+    border: 2px solid #f15c36;
+}
+.btn{
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #f15c36;
+    border-radius: 50px;
+    width: 149px;
+    height: 61px;
+}
+.btn-hover{
+   background-color: #f15c36; 
+}
+.lg-btn{
+    border-radius: 50px;
+    width: 233px;
+    height: 61px;
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+}
+/* ---------------------------------------- font weight------------------------------------ */
+.w4{
+    font-weight: 400;
+}
+.w5{
+    font-weight: 500;
+}
+.w6{
+    font-weight: 600;
+}
+.w7{
+    font-weight: 700;
+}
+.w9{
+    font-weight: 900;
+}
