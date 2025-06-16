@@ -1,8 +1,19 @@
-// navbar
+// ---------------------------------------------------------- navbar-------------------------
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('show');
   }
+// --------------------------------------------------------- Footer----------------------------
+fetch('footer.html')
+.then(res => res.text())
+.then(data =>{
+  document.getElementById('footer-placeholder').innerHTML = data;
+})
+
+// ---------------------------------------------------------------------------------------------
+
+
+
 
   // downwards in about section
 

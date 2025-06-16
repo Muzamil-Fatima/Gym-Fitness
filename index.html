@@ -12,51 +12,7 @@
         /*----------------------------------- section  4  -----------------------  */
         /*----------------------------------- section  3  -----------------------  */
         /*----------------------------------- section  5 -----------------------  */
-        /*----------------------------------- Footer  -----------------------  */
-        footer {
-            border: 2px solid red;
-            margin: 7rem;
-            display: grid;
-            row-gap: 4rem;
-        }
-
-        .columns {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            column-gap: 20px;
-        }
-
-        .right-reserved {
-            grid-template-columns: 1fr 0.5fr 1fr 1fr 1fr;
-            column-gap: 30px;
-            /* align-items: center; */
-        }
-
-        .right-reserved ul {
-            display: flex;
-            list-style: none;
-            margin: 20px;
-            padding: 20px;
-        }
-
-        .col-1 {
-            flex-direction: column;
-            column-gap: 1rem;
-        }
-
-        .social-icon {
-            flex-direction: row;
-            gap: 1rem;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-
-        }
-        .email-block{
-            display: flex;
-            /* flex-direction: column; */
-            /* gap: 0.5rem; */
-        }
+      
     </style>
 </head>
 
@@ -86,30 +42,8 @@
             </div>
             <div class="icons">
                 <ul class="icon-list">
-                    <li><svg fill="white" width="40px" height="40px" viewBox="0 0 24 24" id="cart"
-                            data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color">
-                            <path id="secondary-upstroke" d="M11,20.5h.1m5.9,0h.1"
-                                style="fill: none; stroke: rgb(44, 169, 188); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
-                            </path>
-                            <path id="primary" d="M3,3H5.14a1,1,0,0,1,1,.85L6.62,7,8,16l11-1,2-8H6.62"
-                                style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
-                            </path>
-                        </svg></li>
-                    <li><svg width="32px" height="32px" fill="white" viewBox="0 0 22 22" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>communication / 8 - communication, account, profile, person, user icon</title>
-                            <g id="Free-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <g transform="translate(-1265.000000, -82.000000)" id="Group" stroke="white"
-                                    stroke-width="2">
-                                    <g transform="translate(1263.000000, 80.000000)" id="Shape">
-                                        <path
-                                            d="M12,13 C9.23857625,13 7,10.7614237 7,8 C7,5.23857625 9.23857625,3 12,3 C14.7614237,3 17,5.23857625 17,8 C17,10.7614237 14.7614237,13 12,13 Z M12,16 C17.1428571,16 20.1428571,17.6666667 21,21 L3,21 C3.85714286,17.6666667 6.85714286,16 12,16 Z">
-                                        </path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg></li>
+                    <li><img src="images/cart.svg" alt="cart-icon"></li>
+                    <li><img src="images/user.svg" alt=" user icon"></li>
                 </ul>
             </div>
         </nav>
@@ -283,69 +217,7 @@
 
         </div>
     </main>
-    <footer class="font2">
-        <div><img src="images/Logo.svg" alt="Logo"></div>
-        <div class="columns">
-            <div class=" col-1 flex">
-                <div class="footer-icon">
-                    <ul class="social-icon flex">
-                        <li><svg fill="white" width="42px" height="42px" viewBox="-3 0 19 19"
-                                xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
-                                <path
-                                    d="M12.538 9.62a6.038 6.038 0 1 0-6.981 5.964v-4.22H4.023V9.62h1.534V8.29a2.13 2.13 0 0 1 2.28-2.349 9.285 9.285 0 0 1 1.352.118v1.486h-.762a.873.873 0 0 0-.984.943V9.62h1.675l-.268 1.746H7.443v4.22a6.04 6.04 0 0 0 5.095-5.966z" />
-                            </svg></li>
-                        <li><svg fill="white" width="42px" height="420px" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
-                                <path
-                                    d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z" />
-                            </svg></li>
-                        <li><svg fill="white" width="42px" height="42px" viewBox="0 0 14 14" role="img"
-                                focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="m 4.9520184,12.936803 c -1.12784,-0.2039 -2.19411,-0.9875 -2.66789,-1.9606 -0.32895,-0.6757 -0.45541,-1.3901003 -0.37418,-2.1137003 0.15054,-1.3412 0.84482,-2.4395 1.92406,-3.0439 0.56899,-0.3186 1.38421,-0.4769 1.991,-0.3867 l 0.35091,0.052 9e-5,1.0725 9e-5,1.0725 -0.332,-0.014 c -0.79998,-0.033 -1.39595,0.3096 -1.70379,0.9784 -0.1473,0.32 -0.18461,0.8887 -0.081,1.2351 0.12773,0.4273003 0.50542,0.8132003 0.96145,0.9825003 0.15535,0.058 0.32344,0.08 0.61152,0.079 0.35862,-4e-4 0.42448,-0.013 0.67663,-0.1323 0.36505,-0.1726 0.63141,-0.4231 0.78797,-0.7411 0.10147,-0.2061003 0.13414,-0.3430003 0.16587,-0.6951003 0.0217,-0.2412 0.0401,-2.2122 0.0409,-4.38 l 10e-4,-3.94149998 0.68371,0 c 0.37605,0 0.8277,0.012 1.00368,0.027 l 0.31995,0.027 0,0.1584 c 0,0.3813 0.22299,1.1127 0.45156,1.4812 0.0571,0.092 0.2564996,0.3178 0.4431796,0.5018 0.36068,0.3555 0.66494,0.5352 1.13352,0.6692 0.138,0.04 0.28359,0.089 0.32353,0.109 0.0399,0.02 0.11522,0.038 0.16728,0.038 0.0521,4e-4 0.13701,0.012 0.18876,0.026 l 0.0941,0.025 0,0.9948 0,0.9948 -0.17773,-0.019 c -0.9611,-0.1037 -1.72925,-0.3601 -2.3423096,-0.782 -0.30468,-0.2096 -0.33102,-0.222 -0.30218,-0.1422 0.0104,0.029 0.003,1.1249 -0.0164,2.436 -0.0336,2.2728 -0.0396,2.3992 -0.12781,2.7173003 -0.33904,1.2222 -1.09994,2.1297 -2.10183,2.5068 -0.6126,0.2306 -1.39679,0.2932 -2.09405,0.1671 z" />
-                            </svg></li>
-                    </ul>
-                </div>
-                <p class="w6 text-lg">Subscribe to our newsletter!</p>
-                <div class="email-block">
-                    <label for="email" class="w4 text-base">Enter Email</label>
-                    <input type="email" required>
-                    <img src="images/arrow-up.svg" alt="arrow-icon">
-                </div>
-            </div>
-            <div class=" col-2">
-                <h3 class="w7 text-base">Quick links</h3>
-                <ul class="w4 text-base opacity-75">
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class=" col-3">
-                <h3 class="w7 text-base ">News</h3>
-                <h4 class="w4 text-base opacity-75">Fitness Blog</h4>
-                <div class="w4 text-base opacity-75">FAQ</div>
-            </div>
-            <div class=" col-4">
-                <h2 class="w7 text-base">Fitness Services</h2>
-                <div class="w4 text-base opacity-75">Book a Free Consultation</div>
-                <div class="w4 text-base opacity-75">Refer a Friend & Earn Rewards</div>
-                <div class="w4 text-base opacity-75">Membership & Pricing</div>
-            </div>
-        </div>
-        <div class="right-reserved">
-            <ul class="col-5">
-                <li>
-                    <p class="w5 text-base">©2025 Muzamil-Fatima. All right reserved</p>
-                </li>
-                <li class="text-base">Privacy Plicy</li>
-                <li class="text-base">Legel Notice</li>
-                <li class="text-base">Cookies Policy</li>
-                <li class="text-base">Terms & Condition</li>
-            </ul>
-        </div>
-    </footer>
+   <div id="footer-placeholder"></div>
     <script src="script.js"></script>
 </body>
 
