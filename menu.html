@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Utility.css">
+    <style>
+.dropdown-menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu.show {
+  display: block;
+}
+        .dropdown-container {
+            width: 39.5rem;
+            justify-content: space-between;
+        }
+
+        .dropdown1 {
+            width: 24.5rem;
+            border: 0.67px solid #ffffff;
+            border-radius: 10px;
+        }
+
+        .dropdown2 {
+            width: 13.94rem;
+            border: 0.67px solid #ffffff;
+            border-radius: 10px;
+        }
+
+        .dropdown1 a,
+        .dropdown2 a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .dropdown1 img,
+        .dropdown2 img {
+            position: relative;
+            top: 12px;
+            height: 18px;
+            width: 18px;
+            justify-content: center;
+            text-align: center;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown-container w5 flex">
+        <div class="dropdown1 font2 ">
+            <div class="flex">
+                <a href="#" class="c5 text-lg flex">16 sessions - AED 2580 </a>
+                <img src="images/sort-up.png" alt="dropdown-arrow">
+            </div>
+            <ul class="dropdown-menu c5">
+                <li>12 sessions - AED 2210</li>
+                <li>8 sessions - AED 1520</li>
+                <li>1 sessions - AED 250</li>
+            </ul>
+        </div>
+        <div class="dropdown2 font2 ">
+            <div class="flex">
+                <a href="#" class="c5 text-lg flex">6AM - 7AM</a>
+                <img src="images/sort-up.png" alt="dropdown-arrow">
+            </div>
+            <ul class="dropdown-menu c5">
+                <li>7AM - 9AM</li>
+                <li>9AM - 12PM</li>
+                <li>12PM - 4PM</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

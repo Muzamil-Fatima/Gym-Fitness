@@ -17,12 +17,15 @@ fetch('footer.html')
   document.getElementById('footer-placeholder').innerHTML = data;
 })
 
-// ---------------------------------------------------------------------------------------------
+// --------------------------------------------------------- consultation ------------------------------------
+fetch('consultation.html')
+.then(res =>res.text())
+.then(data=>{
+  document.getElementById('consultation-placeholder').innerHTML = data;
+})
+// --------------------------------------------------------- index.html ------------------------------------
 
-
-
-
-  // downwards in about section
+ // downwards in about section
 
 // const section = document.getElementsById('expandableSection');
 // const toggleBtn = document.getElementsById('toggle-btn');
