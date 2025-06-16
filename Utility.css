@@ -78,6 +78,9 @@
     font-family: "Poppins", sans-serif;
     justify-content: center;
 }
+.dash-line{
+    border: 2px dashed #f15c36;
+}
 /* ---------------------------------------- font weight------------------------------------ */
 .w4{
     font-weight: 400;
