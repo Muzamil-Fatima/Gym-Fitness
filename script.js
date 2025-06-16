@@ -1,8 +1,15 @@
 // ---------------------------------------------------------- navbar-------------------------
+fetch('navbar.html')
+.then(res => res.text())
+.then(data=>{
+  document.getElementById('navbar-placeholder').innerHTML = data
+})
+
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('show');
   }
+
 // --------------------------------------------------------- Footer----------------------------
 fetch('footer.html')
 .then(res => res.text())
