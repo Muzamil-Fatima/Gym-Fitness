@@ -96,7 +96,6 @@
         .con-left1 {
             padding: 3.5rem;
         }
-
         .btn-email {
             margin-top: 10px;
             background-color: #191919;
@@ -105,7 +104,6 @@
             width: 200px;
             border-radius: 14px;
         }
-
         .btn-email:hover {
             background-color: transparent;
             color: #191919;
@@ -126,7 +124,6 @@
             color: #ffffff;
 
         }
-
         .conSection-2 {
             margin: 2rem;
         }
@@ -134,20 +131,22 @@
         .con-left2 {
             width: 31.56rem;
             height: 49.88rem;
-            border: 2px solid red;
             margin: 2rem;
         }
-.con-left2 h3{
-    margin-bottom: 2rem;
-}
-.con-left2 p{
-    margin-bottom: 1rem;
-}
+
+        .con-left2 h3 {
+            margin-bottom: 2rem;
+        }
+
+        .con-left2 p {
+            margin-bottom: 1rem;
+        }
+
         .con-right2 {
             width: 45.75rem;
             height: 58.38rem;
-            border: 2px solid red;
             margin: 2rem;
+            padding: 1.2rem;
 
         }
 
@@ -155,10 +154,12 @@
             text-decoration: none;
             list-style: none;
         }
-.con-icon{
-    margin-bottom: 6rem;
-    margin-top: 0.85rem;
-}
+
+        .con-icon {
+            margin-bottom: 6rem;
+            margin-top: 0.85rem;
+        }
+
         .con-icon ul li {
             height: 50px;
             width: 50px;
@@ -201,12 +202,44 @@
             background-color: #121212;
 
         }
+
         .main-data label {
             margin: 9px;
         }
 
         .labinp {
             flex-direction: column;
+        }
+
+        .inp-dec {
+            width: 16rem;
+        }
+        .con-right2 input{
+            margin: 20px 20px 20px 20px;
+        }
+        .con-right2 label{
+            margin: 0px 20px;
+        }
+        .input-wrap{
+            margin-bottom: 20px;
+
+        }
+        .btn-message{
+            justify-content: center;
+            align-items: center;
+            margin: 20px 20px 20px 25px;
+        }
+        
+        .input-mess {
+            margin: 20px 20px 20px 25px;
+            height: 5rem;
+            padding: 0.75rem 1rem;
+            background: transparent;
+            border: 0.67px solid #ffffff;
+            border-radius: 10px;
+        }
+        .text-inpspace{
+            justify-content: space-between;
         }
     </style>
 </head>
@@ -256,49 +289,64 @@
                 </div>
                 <div class="c3-bg main-data flex">
                     <div class="flex labinp">
-                        <label for="email" class="w5 opacity-50 text-lg">You can Email us here </label>
-                        <input id="email" type="text" readonly placeholder="lenka@coachlenkadubai.com" class="w5 c5">
+                        <label for="email" class="w5 text-lg opacity-50">You can Email us here </label>
+                        <input id="email" type="text" readonly value="lenka@coachlenkadubai.com" class="w5 c5 inp-dec">
                     </div>
                     <div><img src="images/arrow-right.png" alt="=>"></div>
                 </div>
                 <div class="c3-bg  main-data flex">
                     <div class="flex labinp">
-                        <label for="mobile no" class="w5 opacity-50 text-lg">Give as a call on</label>
-                        <input id="mobile no" type="text" readonly placeholder="+971 52 653 88 61" class="w5 c5">
+                        <label for="mobile no" class="w5 text-lg opacity-50">Give as a call on</label>
+                        <input id="mobile no" type="text" readonly value="+971 52 653 88 61" class="w5 c5 inp-dec">
                     </div>
                     <div><img src="images/arrow-right.png" alt="=>"></div>
                 </div>
                 <div class="c3-bg main-data flex">
                     <div class="flex labinp">
-                        <label for="work-hours" class="w5 opacity-50 text-lg">Work Hours</label>
-                        <input id="work-hours" type="text" readonly placeholder="6:00 am - 10:00 pm" class="w5">
+                        <label for="work-hours" class="w5 text-lg opacity-50">Work Hours</label>
+                        <input id="work-hours" type="text" readonly value="6:00 am - 10:00 pm" class="w5 c5 inp-dec">
                     </div>
                     <div><img src="images/arrow-right.png" alt="=>"></div>
                 </div>
             </div>
             <div class="con-right2 c3-bg">
-                <div class="flex">
-                    <label for="" class="w6">First Name</label>
-                    <input type="text" placeholder="Enter First Name" required class="w5 opacity-50">
-                    <label for="" class="w6">Last Name</label>
-                    <input type="text" placeholder="Enter Last Name" required class="w5 opacity-50">
+                <div class="flex text-inpspace">
+                    <div class=" flex labinp">
+                        <label for="" class="w6 ">First Name</label>
+                        <input type="text" placeholder="Enter First Name" required class="w5 inp-dec c5">
+                    </div>
+                    <div class="flex labinp">
+                        <label for="" class="w6">Last Name</label>
+                        <input type="text" placeholder="Enter Last Name" required class="w5 inp-dec c5">
+                    </div>
                 </div>
-                <div class="flex">
-                    <label for="" class="w6">Email</label>
-                    <input type="text" placeholder="Enter Email" required class="w5 opacity-50">
-                    <label for="" class="w6">Phone</label>
-                    <input type="text" placeholder="Enter Phone Number" required class="w5 opacity-50">
+                <div class="flex text-inpspace">
+                    <div class=" flex labinp">
+                        <label for="" class="w6">Email</label>
+                        <input type="text" placeholder="Enter Email" required class="w5 inp-dec c5">
+                    </div>
+                    <div class=" flex labinp">
+                        <label for="" class="w6">Phone</label>
+                        <input type="text" placeholder="Enter Phone Number" required class="w5 inp-dec c5">
+                    </div>
                 </div>
                 <div>
-                    <label for="" class="w6">Subject</label>
-                    <input type="text" placeholder="Enter your Subject" required class="w5 opacity-50">
+                    <div class=" flex labinp">
+                        <label for="" class="w6">Subject</label>
+                        <input type="text" placeholder="Enter your Subject" required class="w5 c5">
+                    </div>
                 </div>
+                <div class="input-wrap">
                 <div id="menu-placeholder"></div>
-                <div>
-                    <label for="" class="w6">Message</label>
-                    <input type="text" placeholder="Enter your message here..." class="w5 opacity-50">
                 </div>
                 <div>
+                    <div class=" flex labinp">
+                        <label for="" class="w6">Message</label>
+                        <!-- <input type="text" > -->
+                        <textarea placeholder="Enter your message here..." class="w5 input-mess" required></textarea>
+                    </div>
+                </div>
+                <div class="btn-message flex">
                     <button class="w5 lg-btn">Send your message</button>
                 </div>
             </div>
