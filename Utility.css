@@ -86,7 +86,7 @@
   background: transparent;
 }
 .dash-line {
-  border: 2px solid #f15c36;
+  border: 1px dashed #f15c36;
 }
 /* ---------------------------------------- font weight------------------------------------ */
 .w4 {
