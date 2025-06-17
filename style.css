@@ -69,7 +69,7 @@ nav ul li a {
 .nav-links a:hover {
   text-decoration: underline;
 }
-.dropdown-menu {
+.dp-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -83,7 +83,7 @@ nav ul li a {
   padding: 0; /* remove default spacing */
 }
 /* Dropdown container */
-.dropdown-menu {
+.dp-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -99,17 +99,17 @@ nav ul li a {
 }
 
 /* Show dropdown on hover (desktop) */
-.dropdown:hover .dropdown-menu {
+.dropdown-navbar:hover .dp-menu {
   display: flex;
 }
 
 /* Also show on focus (for mobile tap/focus) */
-.dropdown:focus-within .dropdown-menu {
+.dp:focus-within .dp-menu {
   display: flex;
 }
 
 /* Dropdown links */
-.dropdown-menu li a {
+.dp-menu li a {
   padding: 0.5rem 1rem;
   color: white;
   text-decoration: none;
@@ -119,7 +119,7 @@ nav ul li a {
   box-sizing: border-box;
   white-space: nowrap;
 }
-.dropdown-menu li a:hover {
+.dp-menu li a:hover {
   background-color: #555;
 }
 
@@ -174,12 +174,12 @@ nav ul li a {
     display: flex;
   }
 
-  .dropdown:hover .dropdown-menu {
+  .dropdown-navbar:hover .dp-menu {
     position: relative;
     display: none;
   }
 
-  .dropdown:focus-within .dropdown-menu {
+  .dropdown-navbar:focus-within .dp-menu {
     display: flex;
   }
   .icon-list {
@@ -946,3 +946,61 @@ footer {
   list-style: none;
   margin-right: 2.5rem;
 }
+/* --------------------------------------------- menue -------------------- */
+ .dropdown-menu {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            position: absolute;
+            z-index: 1000;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown-menu.show {
+            display: block;
+        }
+
+        .dropdown-container {
+            width: 39.5rem;
+            justify-content: space-between;
+        }
+
+        .dropdown1 {
+            width: 24.5rem;
+            border: 0.67px solid #ffffff;
+            border-radius: 10px;
+        }
+
+        .dropdown2 {
+            width: 13.94rem;
+            border: 0.67px solid #ffffff;
+            border-radius: 10px;
+        }
+
+        .dropdown1 a,
+        .dropdown2 a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .dropdown1 img,
+        .dropdown2 img {
+            position: relative;
+            top: 12px;
+            height: 18px;
+            width: 18px;
+            justify-content: center;
+            text-align: center;
+            margin-right: 5px;
+        }

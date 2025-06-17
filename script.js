@@ -23,6 +23,12 @@ fetch('consultation.html')
 .then(data=>{
   document.getElementById('consultation-placeholder').innerHTML = data;
 })
+// --------------------------------------------------------- menu.html ------------------------------------
+fetch('menu.html')
+.then(res=>res.text())
+.then(data=>{
+  document.getElementById('menu-placeholder').innerHTML = data;
+})
 // --------------------------------------------------------- index.html ------------------------------------
 
  // downwards in about section

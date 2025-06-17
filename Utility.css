@@ -42,142 +42,148 @@
   background-color: #ffffff;
 }
 /* -------------------------------flex property------------------------------ */
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
-.btn-fill{
-    font-family: "Poppins", sans-serif;
-    color: #ffffff;
-    border-radius: 50%;
-    width: 149px;
-    height: 61px;
-    background-color: #f15c36;
+.btn-fill {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  border-radius: 15px;
+  width: 149px;
+  height: 50px;
+  background-color: #f15c36;
 }
-.btn-fill:hover{
-    background: transparent;
-    border: 2px solid #f15c36;
+.btn-fill:hover {
+  background: transparent;
+  border: 2px solid #f15c36;
 }
-.btn{
-    font-family: "Poppins", sans-serif;
-    color: #ffffff;
-    background: transparent;
-    border: 2px solid #f15c36;
-    border-radius: 50px;
-    width: 149px;
-    height: 61px;
+.btn {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #f15c36;
+  border-radius: 15px;
+  width: 149px;
+  height: 61px;
 }
-.btn-hover{
-   background-color: #f15c36; 
+.btn:hover {
+  background-color: #f15c36;
 }
-.lg-btn{
-    border-radius: 50px;
-    width: 233px;
-    height: 61px;
-    font-size: 20px;
-    font-weight: 500;
-    align-items: center;
-    font-family: "Poppins", sans-serif;
-    justify-content: center;
+.lg-btn {
+  background-color: #f15c36;
+  border-radius: 15px;
+  width: 233px;
+  height: 61px;
+  font-size: 20px;
+  font-weight: 500;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  color: #ffffff;
 }
-.dash-line{
-    border: 2px dashed #f15c36;
+.lg-btn:hover {
+  border: 2px dashed #f15c36;
+  background: transparent;
+}
+.dash-line {
+  border: 2px solid #f15c36;
 }
 /* ---------------------------------------- font weight------------------------------------ */
-.w4{
-    font-weight: 400;
+.w4 {
+  font-weight: 400;
 }
-.w5{
-    font-weight: 500;
+.w5 {
+  font-weight: 500;
 }
-.w6{
-    font-weight: 600;
+.w6 {
+  font-weight: 600;
 }
-.w7{
-    font-weight: 700;
+.w7 {
+  font-weight: 700;
 }
-.w9{
-    font-weight: 900;
+.w9 {
+  font-weight: 900;
 }
 /* -------------------------------------------Font Size -------------------------------------------- */
-.text-xs{
-    font-size: 0.75rem;      /* 12px */
+.text-xs {
+  font-size: 0.75rem; /* 12px */
 }
-.text-sm{
-    font-size: 0.875rem;      /* 14px */
+.text-sm {
+  font-size: 0.875rem; /* 14px */
 }
-.text-base{
-    font-size: 1rem;          /* 16px */
+.text-base {
+  font-size: 1rem; /* 16px */
 }
-.text-lg{
-    font-size: 1.125rem;      /* 20px */
+.text-lg {
+  font-size: 1.125rem; /* 20px */
 }
-.text-2xl{
-    font-size: 1.5rem;       /* 24px */
+.text-2xl {
+  font-size: 1.5rem; /* 24px */
 }
-.text-3xl{
-    font-size: 1.875rem;       /* 30px */
+.text-3xl {
+  font-size: 1.875rem; /* 30px */
 }
-.text-4xl{
-    font-size: 2.25rem;       /* 36px */
+.text-4xl {
+  font-size: 2.25rem; /* 36px */
 }
-.text-5xl{
-    font-size: 3rem;       /* 48px */
+.text-5xl {
+  font-size: 3rem; /* 48px */
 }
-.text-6xl{
-    font-size: 3.75rem;       /* 60px */
+.text-6xl {
+  font-size: 3.75rem; /* 60px */
 }
-.text-7xl{
-    font-size: 4.5rem;       /* 72px */
+.text-7xl {
+  font-size: 4.5rem; /* 72px */
 }
-.text-8xl{
-    font-size: 6rem;       /* 96px */
+.text-8xl {
+  font-size: 6rem; /* 96px */
 }
-.text-9xl{
-    font-size: 8rem;       /* 128px */
+.text-9xl {
+  font-size: 8rem; /* 128px */
 }
 /* ------------------------------------------------ opocity ----------------------------- */
-.opacity-0{
-    opacity: 0;
+.opacity-0 {
+  opacity: 0;
 }
-.opacity-5{
-    opacity: 5%;
+.opacity-5 {
+  opacity: 5%;
 }
-.opacity-10{
-    opacity: 10%;
+.opacity-10 {
+  opacity: 10%;
 }
-.opacity-20{
-    opacity: 20%;
+.opacity-20 {
+  opacity: 20%;
 }
-.opacity-25{
-    opacity: 25%;
+.opacity-25 {
+  opacity: 25%;
 }
-.opacity-30{
-    opacity: 30%;
+.opacity-30 {
+  opacity: 30%;
 }
-.opacity-40{
-    opacity: 40%;
+.opacity-40 {
+  opacity: 40%;
 }
-.opacity-50{
-    opacity: 50%;
+.opacity-50 {
+  opacity: 50%;
 }
-.opacity-60{
-    opacity: 60%;
+.opacity-60 {
+  opacity: 60%;
 }
-.opacity-70{
-    opacity: 70%;
+.opacity-70 {
+  opacity: 70%;
 }
-.opacity-75{
-    opacity: 75%;
+.opacity-75 {
+  opacity: 75%;
 }
-.opacity-80{
-    opacity: 80%;
+.opacity-80 {
+  opacity: 80%;
 }
-.opacity-90{
-    opacity: 90%;
+.opacity-90 {
+  opacity: 90%;
 }
-.opacity-95{
-    opacity: 95%;
+.opacity-95 {
+  opacity: 95%;
 }
-.opacity-100{
-    opacity: 100%;
+.opacity-100 {
+  opacity: 100%;
 }
