@@ -841,124 +841,12 @@ nav ul li a {
 /*----------------------------------- section  6  -----------------------  */
 /*----------------------------------- section  7  -----------------------  */
 /*----------------------------------- conatct Form  -----------------------  */
-.conSection-1 {
-  width: 95rem;
-  height: 29rem;
-  justify-content: space-between;
-  margin-top: 5px;
-  align-items: center;
-}
 
-.con-left {
-  float: left;
-  flex-direction: column;
-  margin-left: 8rem;
-}
-
-.image-outline {
-  width: 100%;
-  height: auto;
-  /* display: block; */
-}
-
-.con-right {
-  overflow: hidden;
-  width: 46rem;
-  height: 29rem;
-  /* position: absolute; */
-  /* z-index: 1; */
-  /* float: right; */
-  margin-right: 3rem;
-}
-
-.ask-ques {
-  max-width: 49.31rem;
-  height: 9rem;
-  display: block;
-
-  margin-top: 6rem;
-}
-
-.img-lessthen {
-  transform: rotate(-90deg);
-  margin: 11px 13px 11px 13px;
-  height: 8px;
-}
-
-.line-length {
-  width: 10rem;
-  align-items: center;
-}
-
-.arrow-box {
-  margin: 22px 0px;
-}
-.conSection-3 {
-            width: 90vw;
-            height: 52vh;
-            margin: 2rem;
-            padding: 1rem;
-            border-radius: 14px;
-            outline: 2px dashed #191919;
-            outline-offset: -1.5rem;
-            position: relative;
-            overflow: hidden;
-
-        }
-        .custom-textbox {
-            border: 1px solid #ccc;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            background-color: #ffffff;
-            max-width: 55%;
-            font-size: 1.1rem;
-            margin-right: 10rem;
-        }
-        .con-img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transform: translateX(-10rem);
-        }
-        .con-para {
-            width: 65%;
-            margin: 8px;
-            line-height: 1.5;
-        }
-
-        .con-left1 {
-            padding: 3.5rem;
-        }    
-        .btn-email {
-            margin-top: 30px;
-            background-color: #191919;
-            color: #ffffff;
-            height: 55px;
-            width: 232px;
-            border-radius: 14px;
-        }
-
-        .btn-email:hover {
-            background-color: transparent;
-            color: #191919;
-            border: 2px dashed #ffffff;
-        }
-
-        .btn-call {
-            background-color: transparent;
-            color: #191919;
-            border: 2px dashed #ffffff;
-            height: 55px;
-            width: 200px;
-            border-radius: 14px;
-        }
-        .btn-call:hover{
-            margin-top: 30px;
-            background-color: #191919;
-            color: #ffffff;
-            
-        }
 /*----------------------------------- Footer  --------------------------  */
+.full{
+  width: 95vw;
+  margin: auto;
+}
 footer {
   margin: 4rem;
   display: grid;
