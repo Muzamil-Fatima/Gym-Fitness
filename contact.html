@@ -98,11 +98,11 @@
         }
 
         .btn-email {
-            margin-top: 30px;
+            margin-top: 10px;
             background-color: #191919;
             color: #ffffff;
-            height: 55px;
-            width: 232px;
+            height: 50px;
+            width: 200px;
             border-radius: 14px;
         }
 
@@ -116,16 +116,98 @@
             background-color: transparent;
             color: #191919;
             border: 2px dashed #ffffff;
-            height: 55px;
+            height: 50px;
             width: 200px;
             border-radius: 14px;
         }
 
         .btn-call:hover {
-            margin-top: 30px;
             background-color: #191919;
             color: #ffffff;
 
+        }
+
+        .conSection-2 {
+            margin: 2rem;
+        }
+
+        .con-left2 {
+            width: 31.56rem;
+            height: 49.88rem;
+            border: 2px solid red;
+            margin: 2rem;
+        }
+.con-left2 h3{
+    margin-bottom: 2rem;
+}
+.con-left2 p{
+    margin-bottom: 1rem;
+}
+        .con-right2 {
+            width: 45.75rem;
+            height: 58.38rem;
+            border: 2px solid red;
+            margin: 2rem;
+
+        }
+
+        ul li {
+            text-decoration: none;
+            list-style: none;
+        }
+.con-icon{
+    margin-bottom: 6rem;
+    margin-top: 0.85rem;
+}
+        .con-icon ul li {
+            height: 50px;
+            width: 50px;
+            padding: 7px;
+            border: 2px dashed #ffffff;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin: 4px;
+        }
+
+        .con-imgicon {
+            width: 30px;
+            height: 30px;
+        }
+
+        .con-icon ul li:hover {
+            border: 2px dashed #f15c36;
+            background-color: #191919;
+        }
+
+        /* label {
+            display: block;
+            margin-bottom: 0.5rem;
+            } */
+        .main-data {
+            width: 23rem;
+            height: 6rem;
+            padding: 3rem;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #191919;
+
+        }
+
+        .main-data:hover {
+            border: 2px dashed #f15c36;
+            border-radius: 15px;
+            background-color: #121212;
+
+        }
+
+        .main-data label {
+            margin: 9px;
+        }
+
+        .labinp {
+            flex-direction: column;
         }
     </style>
 </head>
@@ -137,7 +219,7 @@
         <div class="conSection-1 flex">
             <div class="con-left flex">
                 <div class="flex">
-                    <p class="w6 font2 text-5xl ask-ques flex">Have Questions or want to get in
+                    <p class="w6 font2 text-5xl ask-ques flex"><span class="c1">Have Questions</span> or want to get in
                         touch with us?</p>
                 </div>
                 <div>
@@ -160,66 +242,76 @@
         </div>
         <hr class="dash-line">
         </div>
-        <div class="conSection-2">
-            <div class="conleft">
-                <h3 class="w7 text-4xl">Contact <span class="c1">Form</span></h3>
-                <p class="w5 opacity-50">Fill out the form below & one of our friendly team members will get back to you
-                    shortly. 👍</p>
-                <p class="w5">Follow Us on Social Media</p>
-                <div class="con-icon">
-                    <ul>
-                        <li><img src="images/facebook.svg" alt="facebook"></li>
-                        <li><img src="images/instagram.svg" alt="instagram"></li>
-                        <li><img src="images/tiktok.svg" alt="tiktok"></li>
+        <div class="conSection-2 flex font2">
+            <div class="con-left2">
+                <h3 class="w7 text-4xl font2">Contact <span class="c1">Form</span></h3>
+                <p class="w5 opacity-50 text-lg">Fill out the form below & one of our friendly team members will get
+                    back to you shortly. 👍</p>
+                <p class="w5 c5 text-lg">Follow Us on Social Media</p>
+                <div class="con-icon flex">
+                    <ul class="flex">
+                        <li><img src="images/facebook.svg" alt="facebook" class="con-imgicon"></li>
+                        <li><img src="images/instagram.svg" alt="instagram" class="con-imgicon"></li>
+                        <li><img src="images/tiktok.svg" alt="tiktok" class="con-imgicon"></li>
                     </ul>
                 </div>
-                <div>
-                    <div>
-                        <label for="" class="w5 opacity-50">You can Email us here </label>
-                        <input type="text" readonly placeholder="lenka@coachlenkadubai.com" class="w5">
+                <div class="c3-bg main-data flex">
+                    <div class="flex labinp">
+                        <label for="email" class="w5 opacity-50 text-lg">You can Email us here </label>
+                        <input id="email" type="text" readonly placeholder="lenka@coachlenkadubai.com" class="w5 c5">
                     </div>
-                    <div><img src="" alt=""></div>
+                    <div><img src="images/arrow-right.png" alt="=>"></div>
                 </div>
-                <div>
-                    <div>
-                        <label for="" class="w5 opacity-50">Give as a call on</label>
-                        <input type="text" readonly placeholder="+971 52 653 88 61">
+                <div class="c3-bg  main-data flex">
+                    <div class="flex labinp">
+                        <label for="mobile no" class="w5 opacity-50 text-lg">Give as a call on</label>
+                        <input id="mobile no" type="text" readonly placeholder="+971 52 653 88 61" class="w5 c5">
                     </div>
-                    <div><img src="" alt=""></div>
+                    <div><img src="images/arrow-right.png" alt="=>"></div>
                 </div>
-                <div>
-                    <div>
-                        <label for="" class="w5 opacity-50">Work Hours</label>
-                        <input type="text" readonly placeholder="6:00 am - 10:00 pm" class="w5">
+                <div class="c3-bg main-data flex">
+                    <div class="flex labinp">
+                        <label for="work-hours" class="w5 opacity-50 text-lg">Work Hours</label>
+                        <input id="work-hours" type="text" readonly placeholder="6:00 am - 10:00 pm" class="w5">
                     </div>
-                    <div><img src="" alt=""></div>
+                    <div><img src="images/arrow-right.png" alt="=>"></div>
                 </div>
             </div>
-            <div class="conright">
-                <label for="" class="w6">First Name</label>
-                <input type="text" placeholder="Enter First Name" required class="w5 opacity-50">
-                <label for="" class="w6">Last Name</label>
-                <input type="text" placeholder="Enter Last Name" required class="w5 opacity-50">
-                <label for="" class="w6">Email</label>
-                <input type="text" placeholder="Enter Email" required class="w5 opacity-50">
-                <label for="" class="w6">Phone</label>
-                <input type="text" placeholder="Enter Phone Number" required class="w5 opacity-50">
-                <label for="" class="w6">Subject</label>
-                <input type="text" placeholder="Enter your Subject" required class="w5 opacity-50">
+            <div class="con-right2 c3-bg">
+                <div class="flex">
+                    <label for="" class="w6">First Name</label>
+                    <input type="text" placeholder="Enter First Name" required class="w5 opacity-50">
+                    <label for="" class="w6">Last Name</label>
+                    <input type="text" placeholder="Enter Last Name" required class="w5 opacity-50">
+                </div>
+                <div class="flex">
+                    <label for="" class="w6">Email</label>
+                    <input type="text" placeholder="Enter Email" required class="w5 opacity-50">
+                    <label for="" class="w6">Phone</label>
+                    <input type="text" placeholder="Enter Phone Number" required class="w5 opacity-50">
+                </div>
+                <div>
+                    <label for="" class="w6">Subject</label>
+                    <input type="text" placeholder="Enter your Subject" required class="w5 opacity-50">
+                </div>
                 <div id="dropdown-container"></div>
-                <label for="" class="w6">Message</label>
-                <input type="text" placeholder="Enter your message here..." class="w5 opacity-50">
-                <button class="w5 ">Send your message</button>
+                <div>
+                    <label for="" class="w6">Message</label>
+                    <input type="text" placeholder="Enter your message here..." class="w5 opacity-50">
+                </div>
+                <div>
+                    <button class="w5 ">Send your message</button>
+                </div>
             </div>
         </div>
-        <div>
+        <!-- <div>
             <div>
                 <p class="w7">Thank you for submitting! 🎉</p>
             </div>
             <div>
                 <p class="w5">We will reach out to you soon. 😊</p>
             </div>
-        </div>
+        </div> -->
         <hr class="full">
         <div id="consultation-placeholder"></div>
         <hr>
