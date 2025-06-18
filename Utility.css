@@ -48,23 +48,23 @@
 .btn-fill {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
-  border-radius: 15px;
-  width: 149px;
+  border-radius: 50px;
+  width: 130px;
   height: 50px;
   background-color: #f15c36;
 }
 .btn-fill:hover {
   background: transparent;
-  border: 2px solid #f15c36;
+  border: 2px dashed #f15c36;
 }
 .btn {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
+  border-radius: 50px;
+  width: 130px;
+  height: 50px;
+  border: 2px dashed #f15c36;
   background: transparent;
-  border: 2px solid #f15c36;
-  border-radius: 15px;
-  width: 149px;
-  height: 61px;
 }
 .btn:hover {
   background-color: #f15c36;

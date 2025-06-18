@@ -22,7 +22,7 @@ body {
   overflow-x: hidden;
   color: #ffffff;
 }
-.custom-width{
+.custom-width {
   width: 90vw;
   justify-content: center;
   margin: auto;
@@ -843,56 +843,117 @@ nav ul li a {
 }
 
 /*----------------------------------- section  6  -----------------------  */
+/* .section-7{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+} */
+.slide {
+  width: 75rem;
+  height: 25rem;
+  border-radius: 12px;
+  border: 2px dashed #f15c36;
+  padding: 3rem 3rem 1rem 3rem;
+}
+
+.slide-hr {
+  margin-bottom: 1rem;
+}
+
+.slide-top {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.slide-input {
+  margin: 3rem 1rem;
+  justify-content: space-between;
+  width: 19rem;
+}
+
+.btn-next {
+  position: absolute;
+  right: 3.5rem;
+}
+
+.btn-nextback {
+  justify-content: space-between;
+}
+
+.slide-circle {
+  height: 145px;
+  width: 145px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.5rem 3rem;
+}
+
+.circle-icon {
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-circle:hover {
+  background-color: rgba(241, 92, 54, 0.25);
+}
+
+.active-circle {
+  background-color: #f15c36 !important;
+  color: white;
+}
 /*----------------------------------- section  7  -----------------------  */
 /*----------------------------------- conatct Form  -----------------------  */
-    .conSection-1 {
-            width: 95vw;
-            height: auto;
-            justify-content: space-between;
-            margin-top: 5px;
-            align-items: center;
-        }
+.conSection-1 {
+  width: 95vw;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 5px;
+  align-items: center;
+}
 
-        .con-left {
-            float: left;
-            flex-direction: column;
-            margin-left: 30px;
-        }
+.con-left {
+  float: left;
+  flex-direction: column;
+  margin-left: 30px;
+}
 
-        .image-outline {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+.image-outline {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-        .con-right {
-            overflow: hidden;
-            width: 53vw;
-            height: 70vh;
-            margin: 12px 25px 0px 0px;
-        }
+.con-right {
+  overflow: hidden;
+  width: 53vw;
+  height: 70vh;
+  margin: 12px 25px 0px 0px;
+}
 
-        .ask-ques {
-            max-width: 57.76vw;
-            height: 18.75vh;
-            display: block;
-            margin-top: 10px;
-        }
+.ask-ques {
+  max-width: 57.76vw;
+  height: 18.75vh;
+  display: block;
+  margin-top: 10px;
+}
 
-        .img-lessthen {
-            transform: rotate(-90deg);
-            margin: 11px 13px 11px 13px;
-            height: 8px;
-        }
+.img-lessthen {
+  transform: rotate(-90deg);
+  margin: 11px 13px 11px 13px;
+  height: 8px;
+}
 
-        .line-length {
-            width: 11.71vw;
-            align-items: center;
-        }
+.line-length {
+  width: 11.71vw;
+  align-items: center;
+}
 
-        .arrow-box {
-            margin: 22px 0px;
-        }
+.arrow-box {
+  margin: 22px 0px;
+}
 /*----------------------------------- Footer  --------------------------  */
 input {
   text-decoration: none;

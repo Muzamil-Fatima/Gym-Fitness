@@ -9,6 +9,68 @@ function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('show');
   }
+// slides 
+document.addEventListener('DOMContentLoaded', function () {
+  const slides = document.querySelectorAll('.slide');
+  const nextButtons = document.querySelectorAll('.btn-fill');
+  const backButtons = document.querySelectorAll('.btn');
+
+  let currentSlide = 0;
+
+  // Show slide using Promise
+  function showSlide(index) {
+    return new Promise((resolve) => {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+      });
+      resolve(); 
+    });
+  }
+
+  showSlide(currentSlide);
+
+  // Next button 
+  nextButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      if (currentSlide < slides.length - 1) {
+        currentSlide++;
+        showSlide(currentSlide).then(() => {
+          console.log(`Slide ${currentSlide + 1} shown`);
+        });
+      } else {
+        // Last slide, redirect
+        window.location.href = "services.html";
+      }
+    });
+  });
+
+  // Back button 
+  backButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      if (currentSlide > 0) {
+        currentSlide--;
+        showSlide(currentSlide).then(() => {
+          console.log(`Back to slide ${currentSlide + 1}`);
+        });
+      }
+    });
+  });
+
+  // Circle click logic with Promises
+  slides.forEach(slide => {
+    const circles = slide.querySelectorAll('.slide-circle');
+    circles.forEach(circle => {
+      circle.addEventListener('click', () => {
+        new Promise((resolve) => {
+          circles.forEach(c => c.classList.remove('active-circle'));
+          resolve();
+        }).then(() => {
+          circle.classList.add('active-circle');
+        });
+      });
+    });
+  });
+});
 
 // --------------------------------------------------------- Footer----------------------------
 fetch('footer.html')
