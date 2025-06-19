@@ -696,12 +696,12 @@ nav ul li a {
   width: 38%;
   height: 21%;
   padding: 2.125rem;
-  margin-right: 19.75rem;
+  margin-right: 14rem;
 }
 
 .vertical-line {
   width: 2px;
-  height: 60vh;
+  height: 70vh;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -757,6 +757,7 @@ nav ul li a {
   font-weight: 400;
   font-size: 20px;
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 .learn-btn:hover {
   background-color: #f15c36;
@@ -1000,7 +1001,7 @@ footer {
 
 .email-block > input {
   display: block;
-  width: 20rem;
+  width: 18rem;
   height: 3.5rem;
   padding: 0.5rem;
   background: transparent;
@@ -1009,7 +1010,7 @@ footer {
 
 .email-label {
   justify-content: space-between;
-  width: 20rem;
+  width: 18rem;
   height: 1.5rem;
 }
 
@@ -1083,35 +1084,34 @@ footer {
   width: 40vw;
 }
 /* --------------------------------------------training.html ---------------------- */
-        .training-container {
-            justify-content: space-around;
-            
-        }
+.training-container {
+  justify-content: space-around;
+}
 
-        .training-left {
-            width: 40vw;
-            line-height: 1.5;
-        }
+.training-left {
+  width: 40vw;
+  line-height: 1.5;
+}
 
-        .training-right {
-            width: 28vw;
-        }
+.training-right {
+  width: 28vw;
+}
 
-        .training-img1 {
-            width: 34vw;
-            height: 56vh;
-            /* object-fit: cover; */
-        }
+.training-img1 {
+  width: 34vw;
+  height: 56vh;
+  /* object-fit: cover; */
+}
 
-        .training-img2 {
-            width: 34vw;
-            height: 40vh;
-            margin: 5px 0px;
-        }
+.training-img2 {
+  width: 34vw;
+  height: 40vh;
+  margin: 5px 0px;
+}
 
-        .training-para {
-            margin-bottom: 1rem;
-        }
+.training-para {
+  margin-bottom: 1rem;
+}
 /* --------------------------------------------- menue -------------------- */
 .dropdown-container {
   display: flex;
