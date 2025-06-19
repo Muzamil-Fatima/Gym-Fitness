@@ -1082,6 +1082,35 @@ footer {
 .left {
   width: 40vw;
 }
+/* --------------------------------------------training.html ---------------------- */
+        .training-container {
+            justify-content: space-around;
+        }
+
+        .training-left {
+            width: 40vw;
+            line-height: 1.5;
+        }
+
+        .training-right {
+            width: 28vw;
+        }
+
+        .training-img1 {
+            width: 28vw;
+            height: 48vh;
+            /* object-fit: cover; */
+        }
+
+        .training-img2 {
+            width: 28vw;
+            height: 36vh;
+            margin: 5px 0px;
+        }
+
+        .training-para {
+            margin-bottom: 1rem;
+        }
 /* --------------------------------------------- menue -------------------- */
 .dropdown-container {
   display: flex;
