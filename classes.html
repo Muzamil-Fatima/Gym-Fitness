@@ -9,11 +9,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Utility.css">
     <link rel="stylesheet" href="mediaquery.css">
+    <style>
+        .img-class {
+            width: 35vw;
+            height: 49vh;
+        }
+        .two-img{
+            justify-content: space-between;
+        }
+    </style>
 </head>
 
 <body>
     <div id="navbar-placeholder"></div>
-    <main>
+    <hr class="opacity-25">
         <div>
             <h2>Training Classes</h2>
             <div class="arrow-box">
@@ -24,24 +33,27 @@
                 <hr class="opacity-20 line-length">
             </div>
         </div>
-        <div>
-            <img src="images/women6.png" alt="">
-            <div><a href="power.html"></a>Strength Power Training</div>
+        <div class="flex two-img">
+            <div class="">
+                <img src="images/women6.png" alt="" class="img-class">
+                <div><a href="power.html"></a>Strength Power Training</div>
+            </div>
+            <div>
+                <img src="images/women7.png" alt="" class="img-class">
+                <div><a href="weightloss.html"></a>Weight Loss</div>
+            </div>
         </div>
-        <div>
-            <img src="images/women7.png" alt="">
-            <div><a href="weightloss.html"></a>Weight Loss</div>
-        </div>
-        <div>
-            <img src="images/women8.png" alt="">
-            <div><a href="functional.html"></a>Functional Training</div>
-        </div>
-        <div>
-            <img src="images/women9.png" alt="">
-            <div><a href="onlinetraining.html"></a>Online Training</div>
+        <div class="flex">
+            <div>
+                <img src="images/women8.png" alt="" class="img-class">
+                <div><a href="functional.html"></a>Functional Training</div>
+            </div>
+            <div>
+                <img src="images/women9.png" alt="" class="img-class">
+                <div><a href="onlinetraining.html"></a>Online Training</div>
+            </div>
         </div>
         <hr>
-    </main>
     <div id="footer-placeholder"></div>
 </body>
 
