@@ -1085,6 +1085,7 @@ footer {
 /* --------------------------------------------training.html ---------------------- */
         .training-container {
             justify-content: space-around;
+            
         }
 
         .training-left {
@@ -1097,14 +1098,14 @@ footer {
         }
 
         .training-img1 {
-            width: 28vw;
-            height: 48vh;
+            width: 34vw;
+            height: 56vh;
             /* object-fit: cover; */
         }
 
         .training-img2 {
-            width: 28vw;
-            height: 36vh;
+            width: 34vw;
+            height: 40vh;
             margin: 5px 0px;
         }
 
