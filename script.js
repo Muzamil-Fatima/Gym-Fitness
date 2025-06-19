@@ -91,6 +91,19 @@ fetch('menu.html')
 .then(data=>{
   document.getElementById('menu-placeholder').innerHTML = data;
 })
+// --------------------------------------------------------- contact.html ------------------------------------
+document.addEventListener("DOMContentLoaded", function(){
+  const sendBtn = document.getElementById("sendBtn");
+  const contactSection = document.getElementById("contact-section");
+  const popupMessage = document.getElementById("popupMessage");
+
+  sendBtn.addEventListener("click", function(e){
+    e.preventDefault();
+
+    contactSection.style.display = "none";
+    popupMessage.style.display = "flex";
+  });
+});
 // --------------------------------------------------------- index.html ------------------------------------
 
  // downwards in about section
