@@ -905,7 +905,34 @@ nav ul li a {
   background-color: #f15c36 !important;
   color: white;
 }
-/*----------------------------------- section  7  -----------------------  */
+/*----------------------------------- details  -----------------------  */
+ .detailed-services{
+            justify-content: space-around;
+            margin: 5rem;
+            height: 60vh;
+        }
+        .details-container{
+            margin: 2rem;
+        }
+/*----------------------------------- classes  -----------------------  */
+
+   .img-class {
+            width: 35vw;
+            height: 55vh;
+        }
+
+        .two-img {
+            justify-content: space-between;
+            margin: 5.5rem;
+        }
+
+        .text-underline {
+
+            text-decoration: underline;
+        }
+        .class-container{
+            margin-top: 1rem;
+        }
 /*----------------------------------- conatct Form  -----------------------  */
 .conSection-1 {
   width: 95vw;
@@ -954,6 +981,198 @@ nav ul li a {
 
 .arrow-box {
   margin: 22px 0px;
+}
+.conSection-3 {
+  width: 90vw;
+  height: 52vh;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 14px;
+  outline: 2px dashed #191919;
+  outline-offset: -1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-textbox {
+  border: 1px solid #ccc;
+  padding: 3px;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  transform: translateX(-16rem);
+  width: 12rem;
+  transform: translateX(-16rem) rotate(4deg);
+}
+
+.con-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform: translateX(-10rem);
+}
+
+.con-para {
+  width: 65%;
+  margin: 8px;
+  line-height: 1.5;
+}
+
+.con-left1 {
+  padding: 3.5rem;
+}
+
+.btn-email {
+  margin-top: 10px;
+  background-color: #191919;
+  color: #ffffff;
+  height: 50px;
+  width: 200px;
+  border-radius: 14px;
+}
+
+.btn-email:hover {
+  background-color: transparent;
+  color: #191919;
+  border: 2px dashed #ffffff;
+}
+
+.btn-call {
+  background-color: transparent;
+  color: #191919;
+  border: 2px dashed #ffffff;
+  height: 50px;
+  width: 200px;
+  border-radius: 14px;
+}
+
+.btn-call:hover {
+  background-color: #191919;
+  color: #ffffff;
+}
+
+.conSection-2 {
+  margin: 2rem;
+}
+
+.con-left2 {
+  width: 31.56rem;
+  height: 49.88rem;
+  margin: 2rem;
+}
+
+.con-left2 h3 {
+  margin-bottom: 2rem;
+}
+
+.con-left2 p {
+  margin-bottom: 1rem;
+}
+
+.con-right2 {
+  width: 45.75rem;
+  height: 58.38rem;
+  margin: 2rem;
+  padding: 1.2rem;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.con-icon {
+  margin-bottom: 6rem;
+  margin-top: 0.85rem;
+}
+
+.con-icon ul li {
+  height: 50px;
+  width: 50px;
+  padding: 7px;
+  border: 2px dashed #ffffff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.con-imgicon {
+  width: 30px;
+  height: 30px;
+}
+
+.con-icon ul li:hover {
+  border: 2px dashed #f15c36;
+  background-color: #191919;
+}
+
+.main-data {
+  width: 23rem;
+  height: 6rem;
+  padding: 3rem;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191919;
+}
+
+.main-data:hover {
+  border: 2px dashed #f15c36;
+  border-radius: 15px;
+  background-color: #121212;
+}
+
+.main-data label {
+  margin: 9px;
+}
+
+.labinp {
+  flex-direction: column;
+}
+
+.inp-dec {
+  width: 16rem;
+}
+
+.con-right2 input {
+  margin: 20px 20px 20px 20px;
+}
+
+.con-right2 label {
+  margin: 0px 20px;
+}
+
+.input-wrap {
+  margin-bottom: 20px;
+}
+
+.btn-message {
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px 20px 25px;
+}
+
+.input-mess {
+  margin: 20px 20px 20px 25px;
+  height: 5rem;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: 0.67px solid #ffffff;
+  border-radius: 10px;
+}
+
+.text-inpspace {
+  justify-content: space-between;
+}
+
+.new-popup {
+  display: none;
+  border: 2px dashed #f15c36;
+}
+.pop-show {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /*----------------------------------- Footer  --------------------------  */
 input {
