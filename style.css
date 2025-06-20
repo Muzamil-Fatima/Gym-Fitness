@@ -191,13 +191,6 @@ nav ul li a {
   }
 }
 
-
-
-
-
-
-
-
 /* ------------------------Done --------------- */
 /* --------------------------------------------training.html ---------------------- */
 .training-container {
@@ -242,38 +235,38 @@ nav ul li a {
   width: 40vw;
 }
 /* -----------------------------------------services--------------------------------------------- */
-       .side-img img {
-            width: 136px;
-            height: 136px;
-            border-radius: 50%;
-            object-fit: cover;
-            display: flex;
-            justify-content: space-between;
-        }
+.side-img img {
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  justify-content: space-between;
+}
 
-        .side-img p {
-            margin: 25px;
-            padding: 12px;
-            justify-content: center;
-            align-items: center;
-        }
+.side-img p {
+  margin: 25px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
 
-        .side-img {
-            display: flex;
-            margin: 20px;
-            padding: 10px;
-            justify-content: space-between;
-        }
+.side-img {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  justify-content: space-between;
+}
 
-        .spacer {
-            height: 70vh;
-        }
+.spacer {
+  height: 70vh;
+}
 
-        .head-service {
-            margin-top: 6rem;
-            padding: 2rem;
-        }
-        /* --------------------------------------------- menue -------------------- */
+.head-service {
+  margin-top: 6rem;
+  padding: 2rem;
+}
+/* --------------------------------------------- menue -------------------- */
 
 .dropdown-container {
   margin-left: 24px;
@@ -342,8 +335,7 @@ nav ul li a {
   width: 12.5rem;
   border-radius: 10px;
 }
-.traing-margin{
-  
+.traing-margin {
   margin-left: 1rem;
 }
 /*----------------------------------- Footer  --------------------------  */
@@ -1091,7 +1083,7 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
 /*----------------------------------- section  6  -----------------------  */
 
@@ -1151,5 +1143,3 @@ ul li {
   background-color: #f15c36 !important;
   color: white;
 }
-
-

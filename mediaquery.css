@@ -2599,7 +2599,7 @@
 /* 💻 Laptops (1025px to 1366px) */
 @media (min-width: 1025px) and (max-width: 1366px) {
   .slide {
-    width: 65rem;
+    width: 75rem;
     padding: 2.5rem;
   }
 

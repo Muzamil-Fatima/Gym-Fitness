@@ -1,9 +1,9 @@
 // ---------------------------------------------------------- index.html-------------------------
-fetch('navbar.html')
-.then(res => res.text())
-.then(data=>{
-  document.getElementById('navbar-placeholder').innerHTML = data
-})
+// fetch('navbar.html')
+// .then(res => res.text())
+// .then(data=>{
+//   document.getElementById('navbar-placeholder').innerHTML = data
+// })
 
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
@@ -173,17 +173,15 @@ document.addEventListener("DOMContentLoaded", () => {
     icon.src = isCollapsed ? "images/sort-down.png" : "images/sort-up.png";
   });
   // ----------------------------------------------------
-  // Inject Navbar into placeholder
 fetch('navbar.html')
   .then(res => res.text())
   .then(data => {
     document.querySelector('.header-container').innerHTML = data;
 
-    // After navbar is loaded, now attach menu toggle
     setupNavbar();
   });
 
-// Hamburger menu toggle function
+// Hamburger menu 
 function setupNavbar() {
   const hamburger = document.querySelector('.hamburger');
   const navLinksContainer = document.querySelector('.nav-links-container');
