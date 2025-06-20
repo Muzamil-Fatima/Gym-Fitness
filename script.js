@@ -1,9 +1,9 @@
 // ---------------------------------------------------------- index.html-------------------------
-// fetch('navbar.html')
-// .then(res => res.text())
-// .then(data=>{
-//   document.getElementById('navbar-placeholder').innerHTML = data
-// })
+fetch('navbar.html')
+.then(res => res.text())
+.then(data=>{
+  document.getElementById('navbar-placeholder').innerHTML = data
+})
 
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
@@ -84,8 +84,6 @@ fetch('consultation.html')
 .then(data=>{
   document.getElementById('consultation-placeholder').innerHTML = data;
 })
-
-
 
 // --------------------------------------------------------- contact.html ------------------------------------
 document.addEventListener("DOMContentLoaded", function(){
@@ -173,22 +171,24 @@ document.addEventListener("DOMContentLoaded", () => {
     icon.src = isCollapsed ? "images/sort-down.png" : "images/sort-up.png";
   });
   // ----------------------------------------------------
-fetch('navbar.html')
-  .then(res => res.text())
-  .then(data => {
-    document.querySelector('.header-container').innerHTML = data;
 
-    setupNavbar();
-  });
+// fetch('navbar.html')
+//   .then(res => res.text())
+//   .then(data => {
+//     document.querySelector('.header-container').innerHTML = data;
 
-// Hamburger menu 
-function setupNavbar() {
-  const hamburger = document.querySelector('.hamburger');
-  const navLinksContainer = document.querySelector('.nav-links-container');
+//     setupNavbar(); 
+//   });
 
-  if (hamburger && navLinksContainer) {
-    hamburger.addEventListener('click', () => {
-      navLinksContainer.classList.toggle('show');
-    });
-  }
-}
+// function setupNavbar() {
+//   const hamburger = document.querySelector('.hamburger');
+//   const navLinksContainer = document.querySelector('.nav-links-container');
+
+//   if (hamburger && navLinksContainer) {
+//     hamburger.addEventListener('click', () => {
+//       navLinksContainer.classList.toggle('show');
+//     });
+//   } else {
+//     console.warn("Hamburger menu not found in the loaded navbar.");
+//   }
+// }
