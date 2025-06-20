@@ -1,4 +1,4 @@
-// ---------------------------------------------------------- navbar-------------------------
+// ---------------------------------------------------------- index.html-------------------------
 fetch('navbar.html')
 .then(res => res.text())
 .then(data=>{
@@ -172,3 +172,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const isCollapsed = section.classList.contains("collapsed");
     icon.src = isCollapsed ? "images/sort-down.png" : "images/sort-up.png";
   });
+  // ----------------------------------------------------
+  // Inject Navbar into placeholder
+fetch('navbar.html')
+  .then(res => res.text())
+  .then(data => {
+    document.querySelector('.header-container').innerHTML = data;
+
+    // After navbar is loaded, now attach menu toggle
+    setupNavbar();
+  });
+
+// Hamburger menu toggle function
+function setupNavbar() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinksContainer = document.querySelector('.nav-links-container');
+
+  if (hamburger && navLinksContainer) {
+    hamburger.addEventListener('click', () => {
+      navLinksContainer.classList.toggle('show');
+    });
+  }
+}
